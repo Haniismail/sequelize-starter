@@ -29,12 +29,7 @@ export let seedRoles = async () => {
         createdAt: new Date(),
         updatedAt: new Date(),
       },
-      {
-        code: RoleCode.CHILD,
-        status: true,
-        createdAt: new Date(),
-        updatedAt: new Date(),
-      },
+
     ]);
     console.log("Roles inserted successfully ✅");
   } else {
@@ -88,13 +83,13 @@ export let seedParent = async () => {
 
 //seed deleting the db
 export let seedDelete = async () => {
-  // db.role.destroy({
-  //   where: {},
-  //   truncate: true,
-  // });
-  // db.parent.destroy({
-  //   where: {},
-  //   truncate: true,
-  // });
-  // console.log("Collections empty successfuly ✅");
+  db.role.destroy({
+    where: {},
+    truncate: true,
+  });
+  db.parent.destroy({
+    where: {},
+    truncate: true,
+  });
+  console.log("Collections empty successfuly ✅");
 };
