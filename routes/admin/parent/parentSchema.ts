@@ -32,7 +32,7 @@ import Joi from "@hapi/joi";
  *           example: 3
  *         username:
  *           type: string
- *           example: Takikids168684694
+ *           example: hanikids168684694
  *         address:
  *           type: string
  *           example: Sousse
@@ -113,7 +113,7 @@ import Joi from "@hapi/joi";
  *           example: 3
  *         username:
  *           type: string
- *           example: Takikids168684694
+ *           example: hanikids168684694
  *         address:
  *           type: string
  *           example: Sousse

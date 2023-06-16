@@ -63,7 +63,7 @@ export const createParent = asyncHandler(
       email,
       confirmation_token: null,
       roleId: parentRole.id,
-      username: `Takikids-Parent${Math.floor(
+      username: `hanikids-Parent${Math.floor(
         100000000 + Math.random() * 900000000
       )}`,
       verified: true,

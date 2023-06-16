@@ -14,7 +14,7 @@ export const tokenInfo = {
   refreshTokenValidityDays: parseInt(
     process.env.refresh_tokenN_VALIDITY_DAYS || "1"
   ),
-  issuer: process.env.TOKEN_ISSUER || "Takiacademy Team",
-  audience: process.env.TOKEN_AUDIENCE || "TakiKids Admin",
+  issuer: process.env.TOKEN_ISSUER || "haniacademy Team",
+  audience: process.env.TOKEN_AUDIENCE || "haniKids Admin",
 };
 export const logDirectory = process.env.LOG_DIR;

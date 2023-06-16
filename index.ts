@@ -22,9 +22,9 @@ const options = {
   definition: {
     openapi: "3.0.0",
     info: {
-      title: "Taki Kids Api",
+      title: "hani Kids Api",
       version: "1.0.0",
-      description: "Admin back office for Taki kids platform ! ",
+      description: "Admin back office for hani kids platform ! ",
     },
     servers: [
       {
