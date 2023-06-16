@@ -4,13 +4,13 @@ module.exports = {
   up: async (queryInterface, Sequelize) => {
     return queryInterface.bulkInsert("parents", [
       {
-        name: "Mohamed Raed",
-        last_name: "Besbes",
-        email: "emailofraed@gmail.com",
-        address: "address of raed",
+        name: "Hani",
+        last_name: "Ismail",
+        email: "emailofhaniismail@gmail.com",
+        address: "address of Hani",
         password: await bcrypt.hash(process.env.SEEDER_PASSWORD, 13),
         phone_number: 23878321,
-        username: "raed",
+        username: "Hani",
         verified: true,
         confirmed: true,
         roleId: 2,

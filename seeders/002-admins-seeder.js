@@ -33,15 +33,15 @@ module.exports = {
       //Super admin seeder
       {
         id : 2,
-        username: "wajih",
+        username: "Hani",
         password: await bcrypt.hash(process.env.SEEDER_PASSWORD, 13),
         email: "SuperAdminEmail@example.com",
         roleId: superadminRoleId,
         birthday: new Date(Date.now()),
-        firstname: "Wajih",
+        firstname: "Hani",
         last_name: "Ghali",
         photo: null,
-        website: "www.WajihGhali.com",
+        website: "www.HaniGhali.com",
         local: "sousse",
         phone: 23878321,
         createdAt: new Date(),
