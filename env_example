@@ -1,0 +1,49 @@
+# Environment Name
+NODE_ENV=development
+
+# Server listen to this port
+
+PORT=5000
+BASE_URL=http://localhost:5000
+
+
+# Token Info
+ACCESS_TOKEN_VALIDITY_DAYS=1
+refresh_tokenN_VALIDITY_DAYS=1
+TOKEN_ISSUER='TakiAcademy Team'
+TOKEN_AUDIENCE='TakiKids Admin '
+
+# DB INfo
+DB_USERNAME= "root"
+DB_PASSWORD= "root"
+DB_NAME="takiKids"
+DB_HOST="127.0.0.1"
+DB_DIALECT="mysql"
+DB_PORT=3309
+
+#TEST DB INFO
+DB_TEST_NAME = "testingdb"
+DB_TEST_USERNAME= "root"
+DB_TEST_PASSWORD= "root"
+DB_TEST_HOST="127.0.0.1"
+DB_TEST_DIALECT="mysql"
+DB_TEST_PORT=3309
+
+#SEEDER config
+SEEDER_PASSWORD="123456789"
+SEEDER_ADMIN_ROLE = "admin"
+SEEDER_SUPERADMIN_ROLE = "superadmin"
+SEEDER_PARENT_ROLE = "parent"
+SEEDER_CHILD_ROLE = "child"
+
+#EMAIL CONFIG
+EMAIL_USERNAME=rh-recrutement@takiacademy.com
+EMAIL_PASSWORD='rd7qJ@988bE2'
+EMAIL_HOST="ssl0.ovh.net"
+EMAIL_PORT=587
+EMAIL='rh-recrutement@takiacademy.com'
+
+#SMS CONFIG
+SMS_SID="AC2c247ff995cda33c52284878735ab3df"
+SMS_AUTH_TOKEN="437ad9ce9f93860ef044ec9e75d84659"
+SMS_SENDER='+15086842037'

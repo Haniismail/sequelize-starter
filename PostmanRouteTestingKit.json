@@ -1,0 +1,4217 @@
+{
+	"info": {
+		"_postman_id": "75d7c02c-5940-4a67-b4f6-3559e708d3a7",
+		"name": "TAKI KIDS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17988091"
+	},
+	"item": [
+		{
+			"name": "Admin Dashboard",
+			"item": [
+				{
+					"name": "0- Admin",
+					"item": [
+						{
+							"name": "Signup",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "username",
+											"value": "wajih",
+											"type": "text"
+										},
+										{
+											"key": "role",
+											"value": "superadmin",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "wajih@Takiacademyteam.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456789",
+											"type": "text"
+										},
+										{
+											"key": "birthday",
+											"value": "1999-05-13",
+											"type": "text"
+										},
+										{
+											"key": "firstname",
+											"value": "Etoile",
+											"type": "text"
+										},
+										{
+											"key": "last_name",
+											"value": "ess",
+											"type": "text"
+										},
+										{
+											"key": "photo",
+											"type": "file",
+											"src": "/C:/Users/Administrator/Downloads/images.jpg"
+										},
+										{
+											"key": "website",
+											"value": "www.ess.com",
+											"type": "text"
+										},
+										{
+											"key": "biography",
+											"value": "equipe football",
+											"type": "text"
+										},
+										{
+											"key": "local",
+											"value": "Sousse",
+											"type": "text"
+										},
+										{
+											"key": "timezone",
+											"value": "+1GMT",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "23878321",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/signup",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"signup"
+									],
+									"query": [
+										{
+											"key": "Name",
+											"value": "ali",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UpdateAdmin",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2Njc0NzAzNDEsImV4cCI6MTY2NzU1Njc0MSwicHJtIjoiM2NhMjQyMDk5YWZmNTExMGU4ZDU3MGQ0OWY0NmQ3MTg5NTRhMGFmZDQyN2JjYjA2ZDBhYzNkM2MxMDMxOThjZWUyYWEzNDEwMGNmMzZiMDkzZjgyNDMyYWI0NzhiODVmZGFjOWEzODkzNzg4NmFhYTAzYzUyNGIxZjgwNmRlNGMiLCJyb2xlIjoiYWRtaW4ifQ.d78k3sz0ssLFQ7TTMPT1lvmNOi2gRSIzFzJpbJuqiwFVpuLeS0Ha2bqCry_D5wouAYQHQguL-KjXorG4Aalmhg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "username",
+											"value": "hani",
+											"type": "text"
+										},
+										{
+											"key": "roleId",
+											"value": "1",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "email",
+											"value": "emailofhaniismail@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456789",
+											"type": "text"
+										},
+										{
+											"key": "birthday",
+											"value": "1999-05-13",
+											"type": "text"
+										},
+										{
+											"key": "firstname",
+											"value": "Hani",
+											"type": "text"
+										},
+										{
+											"key": "last_name",
+											"value": "Ismail",
+											"type": "text"
+										},
+										{
+											"key": "photo",
+											"type": "file",
+											"src": "/C:/Users/Administrator/Desktop/middleware.png"
+										},
+										{
+											"key": "website",
+											"value": "www.Takiacademy.com",
+											"type": "text"
+										},
+										{
+											"key": "biography",
+											"value": " :))",
+											"type": "text"
+										},
+										{
+											"key": "local",
+											"value": "Sousse",
+											"type": "text"
+										},
+										{
+											"key": "timezone",
+											"value": "+1GMT",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "23878321",
+											"type": "text"
+										},
+										{
+											"key": "gender",
+											"value": "male",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/admin/update/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"admin",
+										"update",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Signout",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxMSwiaWF0IjoxNjY4MzY3MzY4LCJleHAiOjE2Njg0NTM3NjgsInBybSI6IjYxOGM2YThjNDc5NmRjZjI0NzJiN2ExYTczMGY4MzdmYTRjZWQ5NjFmNzEyZWE3YWUxMDg5ZDIzZDI2NTc2MTM4MWQ1N2U3OTg2M2ZkNmUzYmJhYTUzMmZhM2EyZWZlZjI5Y2M1MWI2ZWRkMThkZTdhNDM1ZTNjODU3NTQ0MmViIiwicm9sZSI6InBhcmVudCJ9.mmK9h3K8HuAmliurj678G3M0JQo1fIefmzPHQp-c65Bh5gyrQHv-KtWMXlSt0Y7CjZ1Epy2YVTgidv_1a38cXw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/signout",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"signout"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Signin",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\": \"hani\",\r\n    \"password\": \"123456789\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/signin",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"signin"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Me",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2NjY4NzkyOTIsImV4cCI6MTY2Njk2NTY5MiwicHJtIjoiMzJmNWYwNjVjZmM0ZWIzYjk3MzE1Y2Y2MTU3NmZiYzcyM2JjOWIyNDJmM2VmMDBjYjE1MmYyMzdhYTNhNjNlZmY1MzIzZDBiZGY4MmQ3MGFhYjg1ZTkyZWVmMjJjZGI1N2UwMWYyZjM4ZjY4MGJjZWIwZGMzMTJkOGZjMjA3MWQiLCJyb2xlIjoiQWRtaW4ifQ.RdiopfIF6yPEpSFXpqciS5YGcWvmjr_d0qHDBEFhEoRLmJGEVJKp69sFwBhFNIwS4uyg36JJQJOODCAaXTbUFg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/me",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"me"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"auth": {
+						"type": "bearer"
+					},
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					]
+				},
+				{
+					"name": "1-Parent",
+					"item": [
+						{
+							"name": "create parent",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2Njc0NzAzNDEsImV4cCI6MTY2NzU1Njc0MSwicHJtIjoiM2NhMjQyMDk5YWZmNTExMGU4ZDU3MGQ0OWY0NmQ3MTg5NTRhMGFmZDQyN2JjYjA2ZDBhYzNkM2MxMDMxOThjZWUyYWEzNDEwMGNmMzZiMDkzZjgyNDMyYWI0NzhiODVmZGFjOWEzODkzNzg4NmFhYTAzYzUyNGIxZjgwNmRlNGMiLCJyb2xlIjoiYWRtaW4ifQ.d78k3sz0ssLFQ7TTMPT1lvmNOi2gRSIzFzJpbJuqiwFVpuLeS0Ha2bqCry_D5wouAYQHQguL-KjXorG4Aalmhg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Pep\",\r\n    \"last_name\": \"Guardiola\",\r\n    \"email\": \"PepGuardiola@gmail.com\",\r\n    \"address\": \"Manchester, England\",\r\n    \"password\": \"wajihwajih\",\r\n    \"phone_number\": 23878987\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/parent/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"parent",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update parent",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2Njc0NzAzNDEsImV4cCI6MTY2NzU1Njc0MSwicHJtIjoiM2NhMjQyMDk5YWZmNTExMGU4ZDU3MGQ0OWY0NmQ3MTg5NTRhMGFmZDQyN2JjYjA2ZDBhYzNkM2MxMDMxOThjZWUyYWEzNDEwMGNmMzZiMDkzZjgyNDMyYWI0NzhiODVmZGFjOWEzODkzNzg4NmFhYTAzYzUyNGIxZjgwNmRlNGMiLCJyb2xlIjoiYWRtaW4ifQ.d78k3sz0ssLFQ7TTMPT1lvmNOi2gRSIzFzJpbJuqiwFVpuLeS0Ha2bqCry_D5wouAYQHQguL-KjXorG4Aalmhg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Graham\",\r\n    \"last_name\": \"Potter\",\r\n    \"email\": \"GrahamPotter@gmail.com\",\r\n    \"address\": \"London, England\",\r\n    \"password\": \"wajihwajih\",\r\n    \"phone_number\": 23878322\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/parent/update/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"parent",
+										"update",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "toggle Visibility",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2NjM4NTM4MTAsImV4cCI6MTY2Mzk0MDIxMCwicHJtIjoiZGMxYzI2NWQ4Mjc4NjlkYTYwOTdmYmRiMTVmOGMyMGUwZTc3OTZjM2ZiZDAzYWM5ZjY0NDZiZDk0ZDM0MTY2ODk3M2JiMjg2ZjhiYjdjODdjOTRkZDM4MGQ5ZTY5NzdlZjlmYzdkOTljZDY5OTI1ZTJiMTk5ZmRmZjU4NzJkYjgifQ.YlV2zT6p-mSNT9lDubdFHy_XgQO8A7z5MSAnX_5Rd_0DMILSZGGzF8q7gknvGJ3jzKGIqWVRsAeB4xSc8jdF1Q",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/parent/toggleVisibility/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"parent",
+										"toggleVisibility",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "findAllParentsWithChildren",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2Njc0NzAzNDEsImV4cCI6MTY2NzU1Njc0MSwicHJtIjoiM2NhMjQyMDk5YWZmNTExMGU4ZDU3MGQ0OWY0NmQ3MTg5NTRhMGFmZDQyN2JjYjA2ZDBhYzNkM2MxMDMxOThjZWUyYWEzNDEwMGNmMzZiMDkzZjgyNDMyYWI0NzhiODVmZGFjOWEzODkzNzg4NmFhYTAzYzUyNGIxZjgwNmRlNGMiLCJyb2xlIjoiYWRtaW4ifQ.d78k3sz0ssLFQ7TTMPT1lvmNOi2gRSIzFzJpbJuqiwFVpuLeS0Ha2bqCry_D5wouAYQHQguL-KjXorG4Aalmhg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/parent/find",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"parent",
+										"find"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "all parents",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2Njc0NzAzNDEsImV4cCI6MTY2NzU1Njc0MSwicHJtIjoiM2NhMjQyMDk5YWZmNTExMGU4ZDU3MGQ0OWY0NmQ3MTg5NTRhMGFmZDQyN2JjYjA2ZDBhYzNkM2MxMDMxOThjZWUyYWEzNDEwMGNmMzZiMDkzZjgyNDMyYWI0NzhiODVmZGFjOWEzODkzNzg4NmFhYTAzYzUyNGIxZjgwNmRlNGMiLCJyb2xlIjoiYWRtaW4ifQ.d78k3sz0ssLFQ7TTMPT1lvmNOi2gRSIzFzJpbJuqiwFVpuLeS0Ha2bqCry_D5wouAYQHQguL-KjXorG4Aalmhg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/parent/all",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"parent",
+										"all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get one parent",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2Njc0NzAzNDEsImV4cCI6MTY2NzU1Njc0MSwicHJtIjoiM2NhMjQyMDk5YWZmNTExMGU4ZDU3MGQ0OWY0NmQ3MTg5NTRhMGFmZDQyN2JjYjA2ZDBhYzNkM2MxMDMxOThjZWUyYWEzNDEwMGNmMzZiMDkzZjgyNDMyYWI0NzhiODVmZGFjOWEzODkzNzg4NmFhYTAzYzUyNGIxZjgwNmRlNGMiLCJyb2xlIjoiYWRtaW4ifQ.d78k3sz0ssLFQ7TTMPT1lvmNOi2gRSIzFzJpbJuqiwFVpuLeS0Ha2bqCry_D5wouAYQHQguL-KjXorG4Aalmhg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/parent/get/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"parent",
+										"get",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2NjY4NzkyOTIsImV4cCI6MTY2Njk2NTY5MiwicHJtIjoiMzJmNWYwNjVjZmM0ZWIzYjk3MzE1Y2Y2MTU3NmZiYzcyM2JjOWIyNDJmM2VmMDBjYjE1MmYyMzdhYTNhNjNlZmY1MzIzZDBiZGY4MmQ3MGFhYjg1ZTkyZWVmMjJjZGI1N2UwMWYyZjM4ZjY4MGJjZWIwZGMzMTJkOGZjMjA3MWQiLCJyb2xlIjoiQWRtaW4ifQ.RdiopfIF6yPEpSFXpqciS5YGcWvmjr_d0qHDBEFhEoRLmJGEVJKp69sFwBhFNIwS4uyg36JJQJOODCAaXTbUFg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/parent/delete/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"parent",
+										"delete",
+										"4"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "2- Level",
+					"item": [
+						{
+							"name": "create Levels",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2Njc0NzAzNDEsImV4cCI6MTY2NzU1Njc0MSwicHJtIjoiM2NhMjQyMDk5YWZmNTExMGU4ZDU3MGQ0OWY0NmQ3MTg5NTRhMGFmZDQyN2JjYjA2ZDBhYzNkM2MxMDMxOThjZWUyYWEzNDEwMGNmMzZiMDkzZjgyNDMyYWI0NzhiODVmZGFjOWEzODkzNzg4NmFhYTAzYzUyNGIxZjgwNmRlNGMiLCJyb2xlIjoiYWRtaW4ifQ.d78k3sz0ssLFQ7TTMPT1lvmNOi2gRSIzFzJpbJuqiwFVpuLeS0Ha2bqCry_D5wouAYQHQguL-KjXorG4Aalmhg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"level 1\",\r\n    \"order_level\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/levels/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"levels",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Levels With All",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2Njc0NzAzNDEsImV4cCI6MTY2NzU1Njc0MSwicHJtIjoiM2NhMjQyMDk5YWZmNTExMGU4ZDU3MGQ0OWY0NmQ3MTg5NTRhMGFmZDQyN2JjYjA2ZDBhYzNkM2MxMDMxOThjZWUyYWEzNDEwMGNmMzZiMDkzZjgyNDMyYWI0NzhiODVmZGFjOWEzODkzNzg4NmFhYTAzYzUyNGIxZjgwNmRlNGMiLCJyb2xlIjoiYWRtaW4ifQ.d78k3sz0ssLFQ7TTMPT1lvmNOi2gRSIzFzJpbJuqiwFVpuLeS0Ha2bqCry_D5wouAYQHQguL-KjXorG4Aalmhg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/levels/find",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"levels",
+										"find"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update Levels",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2Njc0NzAzNDEsImV4cCI6MTY2NzU1Njc0MSwicHJtIjoiM2NhMjQyMDk5YWZmNTExMGU4ZDU3MGQ0OWY0NmQ3MTg5NTRhMGFmZDQyN2JjYjA2ZDBhYzNkM2MxMDMxOThjZWUyYWEzNDEwMGNmMzZiMDkzZjgyNDMyYWI0NzhiODVmZGFjOWEzODkzNzg4NmFhYTAzYzUyNGIxZjgwNmRlNGMiLCJyb2xlIjoiYWRtaW4ifQ.d78k3sz0ssLFQ7TTMPT1lvmNOi2gRSIzFzJpbJuqiwFVpuLeS0Ha2bqCry_D5wouAYQHQguL-KjXorG4Aalmhg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Level 1\",\r\n    \"order_level\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/levels/update/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"levels",
+										"update",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "toggle Visibility",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2NjM2NzE1NTgsImV4cCI6MTY2Mzc1Nzk1OCwicHJtIjoiMmMzMjQwNGRlYjI4MDc1MzkwZDFlMGUyZGY3ZjMxYWQyYmZjMjRmYjlmMzQ5OGRhNDM1MDAyM2UzODQ0YTY2ZmU4ZTFmNDRmYTY1OGYxNWJhNmY2MWVhMWQ1NTNiMDkwM2U2MTk5M2Q0YmY4MjFhNDE5NmUzNDI5NGVmOGJlNzkifQ.DghKvFX9XhA_qxJ8xNWyl-044VqkrpXIGe1SD4AhigdE-3GOOSEEiDNu9ZHv2xjM56GlgrRQuHe0BeGjdY2ZCw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/levels/toggleVisibility/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"levels",
+										"toggleVisibility",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "all Levels",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2Njc0NzAzNDEsImV4cCI6MTY2NzU1Njc0MSwicHJtIjoiM2NhMjQyMDk5YWZmNTExMGU4ZDU3MGQ0OWY0NmQ3MTg5NTRhMGFmZDQyN2JjYjA2ZDBhYzNkM2MxMDMxOThjZWUyYWEzNDEwMGNmMzZiMDkzZjgyNDMyYWI0NzhiODVmZGFjOWEzODkzNzg4NmFhYTAzYzUyNGIxZjgwNmRlNGMiLCJyb2xlIjoiYWRtaW4ifQ.d78k3sz0ssLFQ7TTMPT1lvmNOi2gRSIzFzJpbJuqiwFVpuLeS0Ha2bqCry_D5wouAYQHQguL-KjXorG4Aalmhg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/levels/all",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"levels",
+										"all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get one Levels",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2Njc0NzAzNDEsImV4cCI6MTY2NzU1Njc0MSwicHJtIjoiM2NhMjQyMDk5YWZmNTExMGU4ZDU3MGQ0OWY0NmQ3MTg5NTRhMGFmZDQyN2JjYjA2ZDBhYzNkM2MxMDMxOThjZWUyYWEzNDEwMGNmMzZiMDkzZjgyNDMyYWI0NzhiODVmZGFjOWEzODkzNzg4NmFhYTAzYzUyNGIxZjgwNmRlNGMiLCJyb2xlIjoiYWRtaW4ifQ.d78k3sz0ssLFQ7TTMPT1lvmNOi2gRSIzFzJpbJuqiwFVpuLeS0Ha2bqCry_D5wouAYQHQguL-KjXorG4Aalmhg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/levels/get/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"levels",
+										"get",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete Levels",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2NjY4NzkyOTIsImV4cCI6MTY2Njk2NTY5MiwicHJtIjoiMzJmNWYwNjVjZmM0ZWIzYjk3MzE1Y2Y2MTU3NmZiYzcyM2JjOWIyNDJmM2VmMDBjYjE1MmYyMzdhYTNhNjNlZmY1MzIzZDBiZGY4MmQ3MGFhYjg1ZTkyZWVmMjJjZGI1N2UwMWYyZjM4ZjY4MGJjZWIwZGMzMTJkOGZjMjA3MWQiLCJyb2xlIjoiQWRtaW4ifQ.RdiopfIF6yPEpSFXpqciS5YGcWvmjr_d0qHDBEFhEoRLmJGEVJKp69sFwBhFNIwS4uyg36JJQJOODCAaXTbUFg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/levels/delete/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"levels",
+										"delete",
+										"3"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "3-Child",
+					"item": [
+						{
+							"name": "create child",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2Njc0NzAzNDEsImV4cCI6MTY2NzU1Njc0MSwicHJtIjoiM2NhMjQyMDk5YWZmNTExMGU4ZDU3MGQ0OWY0NmQ3MTg5NTRhMGFmZDQyN2JjYjA2ZDBhYzNkM2MxMDMxOThjZWUyYWEzNDEwMGNmMzZiMDkzZjgyNDMyYWI0NzhiODVmZGFjOWEzODkzNzg4NmFhYTAzYzUyNGIxZjgwNmRlNGMiLCJyb2xlIjoiYWRtaW4ifQ.d78k3sz0ssLFQ7TTMPT1lvmNOi2gRSIzFzJpbJuqiwFVpuLeS0Ha2bqCry_D5wouAYQHQguL-KjXorG4Aalmhg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "Miguel",
+											"type": "text"
+										},
+										{
+											"key": "last_name",
+											"value": "Almiron",
+											"type": "text"
+										},
+										{
+											"key": "level",
+											"value": "100",
+											"type": "text"
+										},
+										{
+											"key": "parents_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "birthDate",
+											"value": "2022-09-30",
+											"type": "text"
+										},
+										{
+											"key": "gender",
+											"value": "male",
+											"type": "text"
+										},
+										{
+											"key": "avatar",
+											"type": "file",
+											"src": "/Users/takiacademy/Desktop/Screen Shot 2022-10-25 at 2.54.43 PM.png"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/children/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"children",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update child",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2Njc0NzAzNDEsImV4cCI6MTY2NzU1Njc0MSwicHJtIjoiM2NhMjQyMDk5YWZmNTExMGU4ZDU3MGQ0OWY0NmQ3MTg5NTRhMGFmZDQyN2JjYjA2ZDBhYzNkM2MxMDMxOThjZWUyYWEzNDEwMGNmMzZiMDkzZjgyNDMyYWI0NzhiODVmZGFjOWEzODkzNzg4NmFhYTAzYzUyNGIxZjgwNmRlNGMiLCJyb2xlIjoiYWRtaW4ifQ.d78k3sz0ssLFQ7TTMPT1lvmNOi2gRSIzFzJpbJuqiwFVpuLeS0Ha2bqCry_D5wouAYQHQguL-KjXorG4Aalmhg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "Keiran",
+											"type": "text"
+										},
+										{
+											"key": "last_name",
+											"value": "Trippier",
+											"type": "text"
+										},
+										{
+											"key": "level",
+											"value": "level 1",
+											"type": "text"
+										},
+										{
+											"key": "parents_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "birthDate",
+											"value": "2022-09-30",
+											"type": "text"
+										},
+										{
+											"key": "gender",
+											"value": "male",
+											"type": "text"
+										},
+										{
+											"key": "avatar",
+											"type": "file",
+											"src": "/Users/takiacademy/Desktop/Screen Shot 2022-10-24 at 4.53.57 PM.png"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/children/update/7",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"children",
+										"update",
+										"7"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Children withAll",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2Njc0NzAzNDEsImV4cCI6MTY2NzU1Njc0MSwicHJtIjoiM2NhMjQyMDk5YWZmNTExMGU4ZDU3MGQ0OWY0NmQ3MTg5NTRhMGFmZDQyN2JjYjA2ZDBhYzNkM2MxMDMxOThjZWUyYWEzNDEwMGNmMzZiMDkzZjgyNDMyYWI0NzhiODVmZGFjOWEzODkzNzg4NmFhYTAzYzUyNGIxZjgwNmRlNGMiLCJyb2xlIjoiYWRtaW4ifQ.d78k3sz0ssLFQ7TTMPT1lvmNOi2gRSIzFzJpbJuqiwFVpuLeS0Ha2bqCry_D5wouAYQHQguL-KjXorG4Aalmhg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/children/find",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"children",
+										"find"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "toggle Visibility",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2NjM2NzE1NTgsImV4cCI6MTY2Mzc1Nzk1OCwicHJtIjoiMmMzMjQwNGRlYjI4MDc1MzkwZDFlMGUyZGY3ZjMxYWQyYmZjMjRmYjlmMzQ5OGRhNDM1MDAyM2UzODQ0YTY2ZmU4ZTFmNDRmYTY1OGYxNWJhNmY2MWVhMWQ1NTNiMDkwM2U2MTk5M2Q0YmY4MjFhNDE5NmUzNDI5NGVmOGJlNzkifQ.DghKvFX9XhA_qxJ8xNWyl-044VqkrpXIGe1SD4AhigdE-3GOOSEEiDNu9ZHv2xjM56GlgrRQuHe0BeGjdY2ZCw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/children/toggleVisibility/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"children",
+										"toggleVisibility",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "all children",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2Njc0NzAzNDEsImV4cCI6MTY2NzU1Njc0MSwicHJtIjoiM2NhMjQyMDk5YWZmNTExMGU4ZDU3MGQ0OWY0NmQ3MTg5NTRhMGFmZDQyN2JjYjA2ZDBhYzNkM2MxMDMxOThjZWUyYWEzNDEwMGNmMzZiMDkzZjgyNDMyYWI0NzhiODVmZGFjOWEzODkzNzg4NmFhYTAzYzUyNGIxZjgwNmRlNGMiLCJyb2xlIjoiYWRtaW4ifQ.d78k3sz0ssLFQ7TTMPT1lvmNOi2gRSIzFzJpbJuqiwFVpuLeS0Ha2bqCry_D5wouAYQHQguL-KjXorG4Aalmhg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/children/all",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"children",
+										"all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get one child",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2Njc0NzAzNDEsImV4cCI6MTY2NzU1Njc0MSwicHJtIjoiM2NhMjQyMDk5YWZmNTExMGU4ZDU3MGQ0OWY0NmQ3MTg5NTRhMGFmZDQyN2JjYjA2ZDBhYzNkM2MxMDMxOThjZWUyYWEzNDEwMGNmMzZiMDkzZjgyNDMyYWI0NzhiODVmZGFjOWEzODkzNzg4NmFhYTAzYzUyNGIxZjgwNmRlNGMiLCJyb2xlIjoiYWRtaW4ifQ.d78k3sz0ssLFQ7TTMPT1lvmNOi2gRSIzFzJpbJuqiwFVpuLeS0Ha2bqCry_D5wouAYQHQguL-KjXorG4Aalmhg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/children/get/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"children",
+										"get",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete Child",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2NjQ3ODU3MzgsImV4cCI6MTY2NDg3MjEzOCwicHJtIjoiY2U4ZjcyYjRkYWE0NmJhYWIyYmZhODdhZjY2OTIyMmZhNmZmZWU0YjRlNDZkZDMwYzdhMDNjNTc3OTYwN2VkOWIxZjk2NzY3MDQwZTg3ODI1N2IyNzA2NmI0OWI4ZTA0OGMzNTg0YzM1YWVlZDNkODM0YWM4MmM4NDczMDg4MjYifQ.OWRZxcOckJeJUKYzKIKeol0xKcHO7MjsXki8aA-3uBtcehsaI5gFvhAMjdY5yJsBdDzap7JtMB1xT1EEk6W5_w",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/children/delete/11",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"children",
+										"delete",
+										"11"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"auth": {
+						"type": "bearer"
+					},
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					]
+				},
+				{
+					"name": "4- Worlds",
+					"item": [
+						{
+							"name": "create worlds",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2Njc0NzAzNDEsImV4cCI6MTY2NzU1Njc0MSwicHJtIjoiM2NhMjQyMDk5YWZmNTExMGU4ZDU3MGQ0OWY0NmQ3MTg5NTRhMGFmZDQyN2JjYjA2ZDBhYzNkM2MxMDMxOThjZWUyYWEzNDEwMGNmMzZiMDkzZjgyNDMyYWI0NzhiODVmZGFjOWEzODkzNzg4NmFhYTAzYzUyNGIxZjgwNmRlNGMiLCJyb2xlIjoiYWRtaW4ifQ.d78k3sz0ssLFQ7TTMPT1lvmNOi2gRSIzFzJpbJuqiwFVpuLeS0Ha2bqCry_D5wouAYQHQguL-KjXorG4Aalmhg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"level_id\" : 1,\r\n    \"name\": \"World 1\",\r\n    \"order_world\": 1,\r\n    \"enabled_world\" :true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/worlds/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"worlds",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "WorldsWithAll",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2Njc0NzAzNDEsImV4cCI6MTY2NzU1Njc0MSwicHJtIjoiM2NhMjQyMDk5YWZmNTExMGU4ZDU3MGQ0OWY0NmQ3MTg5NTRhMGFmZDQyN2JjYjA2ZDBhYzNkM2MxMDMxOThjZWUyYWEzNDEwMGNmMzZiMDkzZjgyNDMyYWI0NzhiODVmZGFjOWEzODkzNzg4NmFhYTAzYzUyNGIxZjgwNmRlNGMiLCJyb2xlIjoiYWRtaW4ifQ.d78k3sz0ssLFQ7TTMPT1lvmNOi2gRSIzFzJpbJuqiwFVpuLeS0Ha2bqCry_D5wouAYQHQguL-KjXorG4Aalmhg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/worlds/find",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"worlds",
+										"find"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update Worlds",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2NjcyMTAyMDgsImV4cCI6MTY2NzI5NjYwOCwicHJtIjoiZDBjNTMwNDNmZmVkMGQ1ZDMxNWExYjZhMTVhNmQxYWI4Y2MzNTM2NmYyMDA5MjYyOGRiNzlmNDViNjY4OGVjM2E5ZjYyMGI2ZWFiZTljZGI0NDAwZDZmYmNiNjQwYmY0ZGRlOWEzMGFhNTlmM2FmZWYzMjE1NzgxMmE0NzlhYjMiLCJyb2xlIjoiQWRtaW4ifQ.hb2r1kNMpTNPMPIvlDB0QcWH590hKcemTs11mF9NFFHy_GQgY1oJcyPbsi4Ru3uHEIcbsml6ro7MJXyzI-aIww",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"level_id\" : 1,\r\n    \"name\": \"World 1\",\r\n    \"order_world\": 1,\r\n    \"enabled_world\" :true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/worlds/update/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"worlds",
+										"update",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "toggle Visibility",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2NjM2NzE1NTgsImV4cCI6MTY2Mzc1Nzk1OCwicHJtIjoiMmMzMjQwNGRlYjI4MDc1MzkwZDFlMGUyZGY3ZjMxYWQyYmZjMjRmYjlmMzQ5OGRhNDM1MDAyM2UzODQ0YTY2ZmU4ZTFmNDRmYTY1OGYxNWJhNmY2MWVhMWQ1NTNiMDkwM2U2MTk5M2Q0YmY4MjFhNDE5NmUzNDI5NGVmOGJlNzkifQ.DghKvFX9XhA_qxJ8xNWyl-044VqkrpXIGe1SD4AhigdE-3GOOSEEiDNu9ZHv2xjM56GlgrRQuHe0BeGjdY2ZCw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/worlds/toggleVisibility/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"worlds",
+										"toggleVisibility",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "all Worlds",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2Njc0NzAzNDEsImV4cCI6MTY2NzU1Njc0MSwicHJtIjoiM2NhMjQyMDk5YWZmNTExMGU4ZDU3MGQ0OWY0NmQ3MTg5NTRhMGFmZDQyN2JjYjA2ZDBhYzNkM2MxMDMxOThjZWUyYWEzNDEwMGNmMzZiMDkzZjgyNDMyYWI0NzhiODVmZGFjOWEzODkzNzg4NmFhYTAzYzUyNGIxZjgwNmRlNGMiLCJyb2xlIjoiYWRtaW4ifQ.d78k3sz0ssLFQ7TTMPT1lvmNOi2gRSIzFzJpbJuqiwFVpuLeS0Ha2bqCry_D5wouAYQHQguL-KjXorG4Aalmhg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/worlds/all",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"worlds",
+										"all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get one Worlds",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2Njc0NzAzNDEsImV4cCI6MTY2NzU1Njc0MSwicHJtIjoiM2NhMjQyMDk5YWZmNTExMGU4ZDU3MGQ0OWY0NmQ3MTg5NTRhMGFmZDQyN2JjYjA2ZDBhYzNkM2MxMDMxOThjZWUyYWEzNDEwMGNmMzZiMDkzZjgyNDMyYWI0NzhiODVmZGFjOWEzODkzNzg4NmFhYTAzYzUyNGIxZjgwNmRlNGMiLCJyb2xlIjoiYWRtaW4ifQ.d78k3sz0ssLFQ7TTMPT1lvmNOi2gRSIzFzJpbJuqiwFVpuLeS0Ha2bqCry_D5wouAYQHQguL-KjXorG4Aalmhg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/worlds/get/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"worlds",
+										"get",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get world by Level",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2Njc0NzAzNDEsImV4cCI6MTY2NzU1Njc0MSwicHJtIjoiM2NhMjQyMDk5YWZmNTExMGU4ZDU3MGQ0OWY0NmQ3MTg5NTRhMGFmZDQyN2JjYjA2ZDBhYzNkM2MxMDMxOThjZWUyYWEzNDEwMGNmMzZiMDkzZjgyNDMyYWI0NzhiODVmZGFjOWEzODkzNzg4NmFhYTAzYzUyNGIxZjgwNmRlNGMiLCJyb2xlIjoiYWRtaW4ifQ.d78k3sz0ssLFQ7TTMPT1lvmNOi2gRSIzFzJpbJuqiwFVpuLeS0Ha2bqCry_D5wouAYQHQguL-KjXorG4Aalmhg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/worlds/getByLevel/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"worlds",
+										"getByLevel",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete Worlds",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2NjY4NzkyOTIsImV4cCI6MTY2Njk2NTY5MiwicHJtIjoiMzJmNWYwNjVjZmM0ZWIzYjk3MzE1Y2Y2MTU3NmZiYzcyM2JjOWIyNDJmM2VmMDBjYjE1MmYyMzdhYTNhNjNlZmY1MzIzZDBiZGY4MmQ3MGFhYjg1ZTkyZWVmMjJjZGI1N2UwMWYyZjM4ZjY4MGJjZWIwZGMzMTJkOGZjMjA3MWQiLCJyb2xlIjoiQWRtaW4ifQ.RdiopfIF6yPEpSFXpqciS5YGcWvmjr_d0qHDBEFhEoRLmJGEVJKp69sFwBhFNIwS4uyg36JJQJOODCAaXTbUFg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/worlds/delete/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"worlds",
+										"delete",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "5- Games",
+					"item": [
+						{
+							"name": "create Games",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2Njc0NzAzNDEsImV4cCI6MTY2NzU1Njc0MSwicHJtIjoiM2NhMjQyMDk5YWZmNTExMGU4ZDU3MGQ0OWY0NmQ3MTg5NTRhMGFmZDQyN2JjYjA2ZDBhYzNkM2MxMDMxOThjZWUyYWEzNDEwMGNmMzZiMDkzZjgyNDMyYWI0NzhiODVmZGFjOWEzODkzNzg4NmFhYTAzYzUyNGIxZjgwNmRlNGMiLCJyb2xlIjoiYWRtaW4ifQ.d78k3sz0ssLFQ7TTMPT1lvmNOi2gRSIzFzJpbJuqiwFVpuLeS0Ha2bqCry_D5wouAYQHQguL-KjXorG4Aalmhg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "Europa League",
+											"contentType": "",
+											"type": "text"
+										},
+										{
+											"key": "order_game",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "enabled_game",
+											"value": "true",
+											"type": "text"
+										},
+										{
+											"key": "world_id",
+											"value": "69",
+											"type": "text"
+										},
+										{
+											"key": "photo",
+											"type": "file",
+											"src": "/Users/takiacademy/Desktop/role.png"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/games/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"games",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Games With All",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2Njc0NzAzNDEsImV4cCI6MTY2NzU1Njc0MSwicHJtIjoiM2NhMjQyMDk5YWZmNTExMGU4ZDU3MGQ0OWY0NmQ3MTg5NTRhMGFmZDQyN2JjYjA2ZDBhYzNkM2MxMDMxOThjZWUyYWEzNDEwMGNmMzZiMDkzZjgyNDMyYWI0NzhiODVmZGFjOWEzODkzNzg4NmFhYTAzYzUyNGIxZjgwNmRlNGMiLCJyb2xlIjoiYWRtaW4ifQ.d78k3sz0ssLFQ7TTMPT1lvmNOi2gRSIzFzJpbJuqiwFVpuLeS0Ha2bqCry_D5wouAYQHQguL-KjXorG4Aalmhg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/games/find",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"games",
+										"find"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update Games",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2NjY4NzkyOTIsImV4cCI6MTY2Njk2NTY5MiwicHJtIjoiMzJmNWYwNjVjZmM0ZWIzYjk3MzE1Y2Y2MTU3NmZiYzcyM2JjOWIyNDJmM2VmMDBjYjE1MmYyMzdhYTNhNjNlZmY1MzIzZDBiZGY4MmQ3MGFhYjg1ZTkyZWVmMjJjZGI1N2UwMWYyZjM4ZjY4MGJjZWIwZGMzMTJkOGZjMjA3MWQiLCJyb2xlIjoiQWRtaW4ifQ.RdiopfIF6yPEpSFXpqciS5YGcWvmjr_d0qHDBEFhEoRLmJGEVJKp69sFwBhFNIwS4uyg36JJQJOODCAaXTbUFg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "Tetris with numbers for kids",
+											"type": "text"
+										},
+										{
+											"key": "photo",
+											"type": "file",
+											"src": "/C:/Users/Administrator/Desktop/DB Design.png"
+										},
+										{
+											"key": "world_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "order_game",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "enabled_game",
+											"value": "true",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/games/update/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"games",
+										"update",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "toggle Visibility",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2NjM2NzE1NTgsImV4cCI6MTY2Mzc1Nzk1OCwicHJtIjoiMmMzMjQwNGRlYjI4MDc1MzkwZDFlMGUyZGY3ZjMxYWQyYmZjMjRmYjlmMzQ5OGRhNDM1MDAyM2UzODQ0YTY2ZmU4ZTFmNDRmYTY1OGYxNWJhNmY2MWVhMWQ1NTNiMDkwM2U2MTk5M2Q0YmY4MjFhNDE5NmUzNDI5NGVmOGJlNzkifQ.DghKvFX9XhA_qxJ8xNWyl-044VqkrpXIGe1SD4AhigdE-3GOOSEEiDNu9ZHv2xjM56GlgrRQuHe0BeGjdY2ZCw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/games/toggleVisibility/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"games",
+										"toggleVisibility",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get one Game",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2Njc0NzAzNDEsImV4cCI6MTY2NzU1Njc0MSwicHJtIjoiM2NhMjQyMDk5YWZmNTExMGU4ZDU3MGQ0OWY0NmQ3MTg5NTRhMGFmZDQyN2JjYjA2ZDBhYzNkM2MxMDMxOThjZWUyYWEzNDEwMGNmMzZiMDkzZjgyNDMyYWI0NzhiODVmZGFjOWEzODkzNzg4NmFhYTAzYzUyNGIxZjgwNmRlNGMiLCJyb2xlIjoiYWRtaW4ifQ.d78k3sz0ssLFQ7TTMPT1lvmNOi2gRSIzFzJpbJuqiwFVpuLeS0Ha2bqCry_D5wouAYQHQguL-KjXorG4Aalmhg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/games/get/209",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"games",
+										"get",
+										"209"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "all Games",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2Njc0NzAzNDEsImV4cCI6MTY2NzU1Njc0MSwicHJtIjoiM2NhMjQyMDk5YWZmNTExMGU4ZDU3MGQ0OWY0NmQ3MTg5NTRhMGFmZDQyN2JjYjA2ZDBhYzNkM2MxMDMxOThjZWUyYWEzNDEwMGNmMzZiMDkzZjgyNDMyYWI0NzhiODVmZGFjOWEzODkzNzg4NmFhYTAzYzUyNGIxZjgwNmRlNGMiLCJyb2xlIjoiYWRtaW4ifQ.d78k3sz0ssLFQ7TTMPT1lvmNOi2gRSIzFzJpbJuqiwFVpuLeS0Ha2bqCry_D5wouAYQHQguL-KjXorG4Aalmhg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/games/all",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"games",
+										"all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete Games",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpYWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4iLCJzdWIiOjEsImlhdCI6MTY1MjcwODY0NywiZXhwIjoxNjU1MzAwNjQ3LCJwcm0iOiI0OTMzYTQ0Mjc1YTFiZTQ0NzhmZWZiMzdiNmYwY2I0M2E4NzVhNGQ2YmY0MWMxNzNhN2IwNTQ0YTE5NzMyMGY4ZTZmMzk2ZjI5OWI3Zjk1ZTgzMGI0NzIyMzg1ODk0ZjNjYzA5NWFkZmVlNDMzNmUwMzU4MjZhNjc1ODRjMDZhOCJ9.DPTYFeJPq6wPXOnAdMF78euDKIOXTj2ka-k5KNvK40F4XfJ7nQiHK4kvhrKLGk51DLAiSwUbyrdOwdHWuBBpUQ",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/games/delete/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"games",
+										"delete",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "6- Subscription",
+					"item": [
+						{
+							"name": "create Subscription",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2Njc0NzAzNDEsImV4cCI6MTY2NzU1Njc0MSwicHJtIjoiM2NhMjQyMDk5YWZmNTExMGU4ZDU3MGQ0OWY0NmQ3MTg5NTRhMGFmZDQyN2JjYjA2ZDBhYzNkM2MxMDMxOThjZWUyYWEzNDEwMGNmMzZiMDkzZjgyNDMyYWI0NzhiODVmZGFjOWEzODkzNzg4NmFhYTAzYzUyNGIxZjgwNmRlNGMiLCJyb2xlIjoiYWRtaW4ifQ.d78k3sz0ssLFQ7TTMPT1lvmNOi2gRSIzFzJpbJuqiwFVpuLeS0Ha2bqCry_D5wouAYQHQguL-KjXorG4Aalmhg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"year\": \"2022\",\r\n    \"user_id\": 1,\r\n    \"level_id\" : 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/subscription/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"subscription",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Subs With All",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2Njc0NzAzNDEsImV4cCI6MTY2NzU1Njc0MSwicHJtIjoiM2NhMjQyMDk5YWZmNTExMGU4ZDU3MGQ0OWY0NmQ3MTg5NTRhMGFmZDQyN2JjYjA2ZDBhYzNkM2MxMDMxOThjZWUyYWEzNDEwMGNmMzZiMDkzZjgyNDMyYWI0NzhiODVmZGFjOWEzODkzNzg4NmFhYTAzYzUyNGIxZjgwNmRlNGMiLCJyb2xlIjoiYWRtaW4ifQ.d78k3sz0ssLFQ7TTMPT1lvmNOi2gRSIzFzJpbJuqiwFVpuLeS0Ha2bqCry_D5wouAYQHQguL-KjXorG4Aalmhg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/subscription/find",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"subscription",
+										"find"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update Subscription",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2Njc0NzAzNDEsImV4cCI6MTY2NzU1Njc0MSwicHJtIjoiM2NhMjQyMDk5YWZmNTExMGU4ZDU3MGQ0OWY0NmQ3MTg5NTRhMGFmZDQyN2JjYjA2ZDBhYzNkM2MxMDMxOThjZWUyYWEzNDEwMGNmMzZiMDkzZjgyNDMyYWI0NzhiODVmZGFjOWEzODkzNzg4NmFhYTAzYzUyNGIxZjgwNmRlNGMiLCJyb2xlIjoiYWRtaW4ifQ.d78k3sz0ssLFQ7TTMPT1lvmNOi2gRSIzFzJpbJuqiwFVpuLeS0Ha2bqCry_D5wouAYQHQguL-KjXorG4Aalmhg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"year\": \"2023\",\r\n    \"user_id\": 1,\r\n    \"level_id\" : 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/subscription/update/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"subscription",
+										"update",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "toggle Visibility",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2NjM2NzE1NTgsImV4cCI6MTY2Mzc1Nzk1OCwicHJtIjoiMmMzMjQwNGRlYjI4MDc1MzkwZDFlMGUyZGY3ZjMxYWQyYmZjMjRmYjlmMzQ5OGRhNDM1MDAyM2UzODQ0YTY2ZmU4ZTFmNDRmYTY1OGYxNWJhNmY2MWVhMWQ1NTNiMDkwM2U2MTk5M2Q0YmY4MjFhNDE5NmUzNDI5NGVmOGJlNzkifQ.DghKvFX9XhA_qxJ8xNWyl-044VqkrpXIGe1SD4AhigdE-3GOOSEEiDNu9ZHv2xjM56GlgrRQuHe0BeGjdY2ZCw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/subscription/toggleVisibility/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"subscription",
+										"toggleVisibility",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "all Subscription",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2Njc0NzAzNDEsImV4cCI6MTY2NzU1Njc0MSwicHJtIjoiM2NhMjQyMDk5YWZmNTExMGU4ZDU3MGQ0OWY0NmQ3MTg5NTRhMGFmZDQyN2JjYjA2ZDBhYzNkM2MxMDMxOThjZWUyYWEzNDEwMGNmMzZiMDkzZjgyNDMyYWI0NzhiODVmZGFjOWEzODkzNzg4NmFhYTAzYzUyNGIxZjgwNmRlNGMiLCJyb2xlIjoiYWRtaW4ifQ.d78k3sz0ssLFQ7TTMPT1lvmNOi2gRSIzFzJpbJuqiwFVpuLeS0Ha2bqCry_D5wouAYQHQguL-KjXorG4Aalmhg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/subscription/all",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"subscription",
+										"all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get one Subscription",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2Njc0NzAzNDEsImV4cCI6MTY2NzU1Njc0MSwicHJtIjoiM2NhMjQyMDk5YWZmNTExMGU4ZDU3MGQ0OWY0NmQ3MTg5NTRhMGFmZDQyN2JjYjA2ZDBhYzNkM2MxMDMxOThjZWUyYWEzNDEwMGNmMzZiMDkzZjgyNDMyYWI0NzhiODVmZGFjOWEzODkzNzg4NmFhYTAzYzUyNGIxZjgwNmRlNGMiLCJyb2xlIjoiYWRtaW4ifQ.d78k3sz0ssLFQ7TTMPT1lvmNOi2gRSIzFzJpbJuqiwFVpuLeS0Ha2bqCry_D5wouAYQHQguL-KjXorG4Aalmhg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/subscription/get/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"subscription",
+										"get",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete Subscription",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpYWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4iLCJzdWIiOjEsImlhdCI6MTY1MjcwODY0NywiZXhwIjoxNjU1MzAwNjQ3LCJwcm0iOiI0OTMzYTQ0Mjc1YTFiZTQ0NzhmZWZiMzdiNmYwY2I0M2E4NzVhNGQ2YmY0MWMxNzNhN2IwNTQ0YTE5NzMyMGY4ZTZmMzk2ZjI5OWI3Zjk1ZTgzMGI0NzIyMzg1ODk0ZjNjYzA5NWFkZmVlNDMzNmUwMzU4MjZhNjc1ODRjMDZhOCJ9.DPTYFeJPq6wPXOnAdMF78euDKIOXTj2ka-k5KNvK40F4XfJ7nQiHK4kvhrKLGk51DLAiSwUbyrdOwdHWuBBpUQ",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/subscription/delete/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"subscription",
+										"delete",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "7- Progress",
+					"item": [
+						{
+							"name": "create Progress",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2Njc0NzAzNDEsImV4cCI6MTY2NzU1Njc0MSwicHJtIjoiM2NhMjQyMDk5YWZmNTExMGU4ZDU3MGQ0OWY0NmQ3MTg5NTRhMGFmZDQyN2JjYjA2ZDBhYzNkM2MxMDMxOThjZWUyYWEzNDEwMGNmMzZiMDkzZjgyNDMyYWI0NzhiODVmZGFjOWEzODkzNzg4NmFhYTAzYzUyNGIxZjgwNmRlNGMiLCJyb2xlIjoiYWRtaW4ifQ.d78k3sz0ssLFQ7TTMPT1lvmNOi2gRSIzFzJpbJuqiwFVpuLeS0Ha2bqCry_D5wouAYQHQguL-KjXorG4Aalmhg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"score\" : 100,\r\n    \"status\" : \"available\",\r\n    \"user_id\": 1,\r\n    \"game_id\" : 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/progress/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"progress",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Progress With All",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2Njc0NzAzNDEsImV4cCI6MTY2NzU1Njc0MSwicHJtIjoiM2NhMjQyMDk5YWZmNTExMGU4ZDU3MGQ0OWY0NmQ3MTg5NTRhMGFmZDQyN2JjYjA2ZDBhYzNkM2MxMDMxOThjZWUyYWEzNDEwMGNmMzZiMDkzZjgyNDMyYWI0NzhiODVmZGFjOWEzODkzNzg4NmFhYTAzYzUyNGIxZjgwNmRlNGMiLCJyb2xlIjoiYWRtaW4ifQ.d78k3sz0ssLFQ7TTMPT1lvmNOi2gRSIzFzJpbJuqiwFVpuLeS0Ha2bqCry_D5wouAYQHQguL-KjXorG4Aalmhg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/progress/find",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"progress",
+										"find"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update Progress",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2NjY4NzkyOTIsImV4cCI6MTY2Njk2NTY5MiwicHJtIjoiMzJmNWYwNjVjZmM0ZWIzYjk3MzE1Y2Y2MTU3NmZiYzcyM2JjOWIyNDJmM2VmMDBjYjE1MmYyMzdhYTNhNjNlZmY1MzIzZDBiZGY4MmQ3MGFhYjg1ZTkyZWVmMjJjZGI1N2UwMWYyZjM4ZjY4MGJjZWIwZGMzMTJkOGZjMjA3MWQiLCJyb2xlIjoiQWRtaW4ifQ.RdiopfIF6yPEpSFXpqciS5YGcWvmjr_d0qHDBEFhEoRLmJGEVJKp69sFwBhFNIwS4uyg36JJQJOODCAaXTbUFg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"user_id\": 2,\r\n    \"game_id\" : 1,\r\n    \"score\" : 50,\r\n    \"status\" : \"available\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/progress/update/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"progress",
+										"update",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "toggle Visibility",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2NjM2NzE1NTgsImV4cCI6MTY2Mzc1Nzk1OCwicHJtIjoiMmMzMjQwNGRlYjI4MDc1MzkwZDFlMGUyZGY3ZjMxYWQyYmZjMjRmYjlmMzQ5OGRhNDM1MDAyM2UzODQ0YTY2ZmU4ZTFmNDRmYTY1OGYxNWJhNmY2MWVhMWQ1NTNiMDkwM2U2MTk5M2Q0YmY4MjFhNDE5NmUzNDI5NGVmOGJlNzkifQ.DghKvFX9XhA_qxJ8xNWyl-044VqkrpXIGe1SD4AhigdE-3GOOSEEiDNu9ZHv2xjM56GlgrRQuHe0BeGjdY2ZCw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/progress/toggleVisibility/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"progress",
+										"toggleVisibility",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "all Progress",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2Njc0NzAzNDEsImV4cCI6MTY2NzU1Njc0MSwicHJtIjoiM2NhMjQyMDk5YWZmNTExMGU4ZDU3MGQ0OWY0NmQ3MTg5NTRhMGFmZDQyN2JjYjA2ZDBhYzNkM2MxMDMxOThjZWUyYWEzNDEwMGNmMzZiMDkzZjgyNDMyYWI0NzhiODVmZGFjOWEzODkzNzg4NmFhYTAzYzUyNGIxZjgwNmRlNGMiLCJyb2xlIjoiYWRtaW4ifQ.d78k3sz0ssLFQ7TTMPT1lvmNOi2gRSIzFzJpbJuqiwFVpuLeS0Ha2bqCry_D5wouAYQHQguL-KjXorG4Aalmhg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/progress/all",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"progress",
+										"all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get one Progress",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2Njc0NzAzNDEsImV4cCI6MTY2NzU1Njc0MSwicHJtIjoiM2NhMjQyMDk5YWZmNTExMGU4ZDU3MGQ0OWY0NmQ3MTg5NTRhMGFmZDQyN2JjYjA2ZDBhYzNkM2MxMDMxOThjZWUyYWEzNDEwMGNmMzZiMDkzZjgyNDMyYWI0NzhiODVmZGFjOWEzODkzNzg4NmFhYTAzYzUyNGIxZjgwNmRlNGMiLCJyb2xlIjoiYWRtaW4ifQ.d78k3sz0ssLFQ7TTMPT1lvmNOi2gRSIzFzJpbJuqiwFVpuLeS0Ha2bqCry_D5wouAYQHQguL-KjXorG4Aalmhg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/progress/get/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"progress",
+										"get",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete Progress",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpYWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4iLCJzdWIiOjEsImlhdCI6MTY1MjcwODY0NywiZXhwIjoxNjU1MzAwNjQ3LCJwcm0iOiI0OTMzYTQ0Mjc1YTFiZTQ0NzhmZWZiMzdiNmYwY2I0M2E4NzVhNGQ2YmY0MWMxNzNhN2IwNTQ0YTE5NzMyMGY4ZTZmMzk2ZjI5OWI3Zjk1ZTgzMGI0NzIyMzg1ODk0ZjNjYzA5NWFkZmVlNDMzNmUwMzU4MjZhNjc1ODRjMDZhOCJ9.DPTYFeJPq6wPXOnAdMF78euDKIOXTj2ka-k5KNvK40F4XfJ7nQiHK4kvhrKLGk51DLAiSwUbyrdOwdHWuBBpUQ",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/progress/delete/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"progress",
+										"delete",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Search",
+					"item": [
+						{
+							"name": "search",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjozLCJpYXQiOjE2NjE3NzA5MDMsImV4cCI6MTY2NDM2MjkwMywicHJtIjoiNzgyOWFlNzI4OGU4OWM3MWI0Njc1OGM1ZjQ5Y2UyODRmNWNkOGZkZWQyOWQ5NWMxNTY2MWM2NGU5OGZhODZlODU4ZDE1MjhmYTZmMDM5MzE5ODNiMWMwYTVmOTE0MzhlZDNlYzRjMWE4YThiMGZiYTk2ZDRjMzY2YWE2YTg1NDcifQ.H7zYHbd1AooLv9_sQr5YcM6uWCyVBn1q1oQm5AgvUcwDVzgeCbMP5V5jU6peMyEslHMEmB0vvVUScsSlQwHqIQ",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/search/keyword/goes",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"search",
+										"keyword",
+										"goes"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Client Side",
+			"item": [
+				{
+					"name": "Security",
+					"item": [
+						{
+							"name": "Parent-login",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"phone_number\": 25915556,\r\n    \"password\": \"hanihani\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/auth/login_check",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"auth",
+										"login_check"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "register",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"José\",\r\n    \"last_name\": \"Mourinho\",\r\n    \"email\": \"José@gmail.com\",\r\n    \"address\": \"Roma, Italy\",\r\n    \"plainPassword\": \"riyadhriyadh\",\r\n    \"phone_number\": 20202020,\r\n    \"countries\" : \"SA\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/auth/register",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"auth",
+										"register"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "logout",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxMSwiaWF0IjoxNjY4MzY3NTQ5LCJleHAiOjE2Njg0NTM5NDksInBybSI6IjZlMWFiZTE5OGI3ZDgyOTMwYzQxY2YxZjliY2Y5NjIwNTY3ZGZkMzUzMmRhZGNhMzU1MDRhMThiZGZkYjA2NzNiMWMxYTMwNzhhMjJkZjBhYTRjZGZiZjI3MGMwMDZkY2VkYTQxNDI0ZWY2ZGU1NmRhODI1YzU0ZTlhOWI5ZGEwIiwicm9sZSI6InBhcmVudCJ9.C3ccDlQMQ-zOCCUXDED3ON23GM-meq8u5CMyvQ7x29RaeFrt785Byn0ldoyzEY8bBaEAUYiXWWYZbfIWo_E2Ew",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/auth/logout",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"auth",
+										"logout"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "resend_confirmation",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"userInfo\": 23878321\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/auth/resend-confirmation",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"auth",
+										"resend-confirmation"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "confirm_registration",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoyMzAsImlhdCI6MTY2ODM3MzY3MSwiZXhwIjoxNjY4NDYwMDcxLCJwcm0iOiJlNDRkYzJlYWVhYjU0OTEyZTExYjE5NDI5MWFlMTZhMTlmMGZiMTkxNWE3YTQ3NGVmMzVkNjQxOTlmZDA2Njc4NGUzNTNjZWNiMWU1MzA4ZmNlYTFiMmZmN2VmYmI5NDc4Y2VjMTgwOWI4ODdjMmMwMTFjZTQ1ZGY4NTkzNGY3OSIsInJvbGUiOiJwYXJlbnQifQ.bb7BsY8UMxdZmarSTkzkdnhvvjzIX_IvuaPINppJSEOqUMDUb4_aJMEI-bQmvfIOakixnw8yf6Uld3AY926tVA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/auth/confirm-registration?confirmationToken =7ac9b4d6c0e2a49f",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"auth",
+										"confirm-registration"
+									],
+									"query": [
+										{
+											"key": "confirmationToken ",
+											"value": "7ac9b4d6c0e2a49f"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "request_password",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/auth/request-password?identity=23878321",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"auth",
+										"request-password"
+									],
+									"query": [
+										{
+											"key": "identity",
+											"value": "23878321"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "reset password",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"newPassword\": \"hanihani\",\r\n    \"retypePassword\": \"hanihani\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/auth/reset-password?confirmationToken=7ac9b4d6c0e2a49f",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"auth",
+										"reset-password"
+									],
+									"query": [
+										{
+											"key": "confirmationToken",
+											"value": "7ac9b4d6c0e2a49f"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "countries",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/auth/countries",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"auth",
+										"countries"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Parent",
+					"item": [
+						{
+							"name": "ChildrenByCurrentParent",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxMSwiaWF0IjoxNjY4MTg4ODgxLCJleHAiOjE2NjgyNzUyODEsInBybSI6Ijc5MmYzZDEyZDM0MDNkY2MwYjQxZWI5Mjc3NDI1OTQ1YTkxODNiMTY4MmI5NWJlZWQ2ZTQ0ODA0NGJlYTI1MmNhOWRiM2NlZjA4YmQ2MDAxYTliNWFjMDAxYzI1MWIxNDRjMWVmZmIwNTM3NWJiNjUzZmY2ZjUzZTAxNGU3MGY5Iiwicm9sZSI6InBhcmVudCJ9.Q6Aa45yPWN8m40LorPBXMaWi-oeK8Hm_pc1chtpU-rUoqcMHwlvJ7xh9JELB31ugv29kp1bQuSs7n2y-EGDrcw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/parents/children",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"parents",
+										"children"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "SwitchParentChild",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxMSwiaWF0IjoxNjY4MjgzMzQxLCJleHAiOjE2NjgzNjk3NDEsInBybSI6IjJiNGViYTJiMzBiYTg4MWExMWEwNDBmODQxYjU1N2ZlYTUyMDQ0NDkxNTA0YzZiZjYwOTY0MWQwNTYzYjY2NzI5NWViOWUzNmVhY2JjOThmYmU5Mzc0ODUwZmMyMTc4NjllNTdjNTgxMTJlYjAzNmEyY2U0MjkyMzlhMTExMTc1Iiwicm9sZSI6InBhcmVudCJ9.cxCs0hYtQjklbXyGM9lf4z22iouCkpgIt8ZekyTEefZHK6w2E1AUuj5gNU0sT2XPwaINdWq_I1d0IDi53449yw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/parents/switch/298",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"parents",
+										"switch",
+										"298"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create child",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxMSwiaWF0IjoxNjY4MTkzMjE4LCJleHAiOjE2NjgyNzk2MTgsInBybSI6Ijk5ZjNiOWIwODEzZjdjN2ExMDBlYmM5ZDdjODllOWM2NTkxMWU2NmY1MjFiN2NhMWRkYTRlZGJkODVmOWVjYTlhYzdhNjkwZWMwMzc4OTUzNjUwY2IwMDAwODlhZDdiZjg2Yzk2ODE5ZTU3ODc0ZThhZGE4ODExMzhjZWZiODY2Iiwicm9sZSI6InBhcmVudCJ9.DzrdvZJLCfSRpfhaU9WXyT-7qK1RJtbw890pfAsPGfCftXrNMxIz1d3lxQDhIs724uGoREL1-1T1HAhyRvvEUA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "Miguel",
+											"type": "text"
+										},
+										{
+											"key": "last_name",
+											"value": "Almiron",
+											"type": "text"
+										},
+										{
+											"key": "level",
+											"value": "1251515",
+											"type": "text"
+										},
+										{
+											"key": "birthDate",
+											"value": "2022-09-30",
+											"type": "text"
+										},
+										{
+											"key": "gender",
+											"value": "male",
+											"type": "text"
+										},
+										{
+											"key": "avatar",
+											"type": "file",
+											"src": "/C:/Users/Administrator/Pictures/CRUD.jpeg"
+										},
+										{
+											"key": "email",
+											"value": "3561651651",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/parents/child",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"parents",
+										"child"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getChildByID",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxMSwiaWF0IjoxNjY4MTkzMjE4LCJleHAiOjE2NjgyNzk2MTgsInBybSI6Ijk5ZjNiOWIwODEzZjdjN2ExMDBlYmM5ZDdjODllOWM2NTkxMWU2NmY1MjFiN2NhMWRkYTRlZGJkODVmOWVjYTlhYzdhNjkwZWMwMzc4OTUzNjUwY2IwMDAwODlhZDdiZjg2Yzk2ODE5ZTU3ODc0ZThhZGE4ODExMzhjZWZiODY2Iiwicm9sZSI6InBhcmVudCJ9.DzrdvZJLCfSRpfhaU9WXyT-7qK1RJtbw890pfAsPGfCftXrNMxIz1d3lxQDhIs724uGoREL1-1T1HAhyRvvEUA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/parents/298",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"parents",
+										"298"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update child",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxMSwiaWF0IjoxNjY4MTkzMjE4LCJleHAiOjE2NjgyNzk2MTgsInBybSI6Ijk5ZjNiOWIwODEzZjdjN2ExMDBlYmM5ZDdjODllOWM2NTkxMWU2NmY1MjFiN2NhMWRkYTRlZGJkODVmOWVjYTlhYzdhNjkwZWMwMzc4OTUzNjUwY2IwMDAwODlhZDdiZjg2Yzk2ODE5ZTU3ODc0ZThhZGE4ODExMzhjZWZiODY2Iiwicm9sZSI6InBhcmVudCJ9.DzrdvZJLCfSRpfhaU9WXyT-7qK1RJtbw890pfAsPGfCftXrNMxIz1d3lxQDhIs724uGoREL1-1T1HAhyRvvEUA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "Wilson",
+											"type": "text"
+										},
+										{
+											"key": "last_name",
+											"value": "Newcastle",
+											"type": "text"
+										},
+										{
+											"key": "level",
+											"value": "level 1",
+											"type": "text"
+										},
+										{
+											"key": "parents_id",
+											"value": "11",
+											"type": "text"
+										},
+										{
+											"key": "birthDate",
+											"value": "2022-09-30",
+											"type": "text"
+										},
+										{
+											"key": "gender",
+											"value": "male",
+											"type": "text"
+										},
+										{
+											"key": "avatar",
+											"type": "file",
+											"src": "/Users/takiacademy/Desktop/Screen Shot 2022-10-26 at 2.32.57 PM.png"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/parents/260",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"parents",
+										"260"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update parent",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxMSwiaWF0IjoxNjY4MzQ3ODYyLCJleHAiOjE2Njg0MzQyNjIsInBybSI6IjY2ZGM4OGZjYTgwMjVlNmU4Y2Y4OThmODhhOThmOWNjYjNiMjljOGUzZGQ2MzIyMWU5MmY1ODNmNDg1NWY4YjVlMzExNDI0ZWNlMThiOTRmMjIwYzUzYzZkMTgzODZlNGYyYTA0NzJlYTk2ZjljODlmMzg4MmU4Y2VlM2M3MjM2Iiwicm9sZSI6InBhcmVudCJ9.Ju5R-6R74ETvUtYB4YLl2hZxcjxKWNqyX_pdmXWr-5nldtJQsT7aJO26OLq3ZhncuZveiAsm-v9ucOLbHEcoSA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "Graham",
+											"type": "text"
+										},
+										{
+											"key": "last_name",
+											"value": "Potter",
+											"type": "text"
+										},
+										{
+											"key": "address",
+											"value": "Brighton",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/parents/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"parents",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "remove avatar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxMSwiaWF0IjoxNjY4MjcyNDA1LCJleHAiOjE2NjgzNTg4MDUsInBybSI6ImUxYWFmZmY2MzU3NGQ1ZTRhOTU0NDI5OTlhOTMyZWY1OTA1MmIyNWQ0ZmE0MTYyMTUxMmE0MjBkYzQ5NjZhYjMwMjg5ZWQ4NjU2NDhiYjQ3YTkzYzcwNzMzMGM3MTBkMzk3NWUzYjdkMmNmNmUzNTE5Zjc3OTQwZWRkNmQ5MmI0Iiwicm9sZSI6InBhcmVudCJ9.di8ud635i7_ZeNCHsYMg9-lvzyCh_ipTtdNePuHMmLDCJ10WRlMZEGIHopKyS-DxdjC3TEVOELi7IDQcq7F4oQ",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/parents/260/remove-avatar",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"parents",
+										"260",
+										"remove-avatar"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete Child",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxMSwiaWF0IjoxNjY3ODI3ODY5LCJleHAiOjE2Njc5MTQyNjksInBybSI6IjRlMjRiODJmOTlkZmQyNDQ2NjZhZGFlMzFmZjk2YWQ4ODdiZGYzYjAwYzlhMjBiZjAxYTViNzBmMWVmYjk5OGQ5OWI5YTZhNjFjNDZiMzYyNDdhZGEzNDZlMzUxYWJjNmQwMmRmNjM1MGNkYmEzOTc5MzVjZWE0MzUzMDJlZTI5Iiwicm9sZSI6InBhcmVudCJ9.O27HvF5yLLQdoNAsbolaySQWqAKBdKbh4lScvE62fgW8XjXGCh7LbryK1FwYeXfFLbrAZjSyFb8bFghT3kdYYQ",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/parents/47",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"parents",
+										"47"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "me",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxMSwiaWF0IjoxNjY4MjcyNDA1LCJleHAiOjE2NjgzNTg4MDUsInBybSI6ImUxYWFmZmY2MzU3NGQ1ZTRhOTU0NDI5OTlhOTMyZWY1OTA1MmIyNWQ0ZmE0MTYyMTUxMmE0MjBkYzQ5NjZhYjMwMjg5ZWQ4NjU2NDhiYjQ3YTkzYzcwNzMzMGM3MTBkMzk3NWUzYjdkMmNmNmUzNTE5Zjc3OTQwZWRkNmQ5MmI0Iiwicm9sZSI6InBhcmVudCJ9.di8ud635i7_ZeNCHsYMg9-lvzyCh_ipTtdNePuHMmLDCJ10WRlMZEGIHopKyS-DxdjC3TEVOELi7IDQcq7F4oQ",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/parents/me",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"parents",
+										"me"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "change Password",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2Njc0ODY0MjgsImV4cCI6MTY2NzU3MjgyOCwicHJtIjoiOWQ0YjM0NWY2ODViMDI4NDJiNjljMzM5NWQ2NTA2Njk5MGI3MWFhZjExMjM1YzM5YWFmYmZlNzRkMzE4YTRhNmU0NTIzODMzNjBmYmJmNjU1MWZjZTk3MmVhZDU5YmE0NDU2M2U3OTdlYjNhNDkzNGZiMWQwMGJjNWI3Yzg3MTgiLCJyb2xlIjoicGFyZW50In0.G1faNFp0oYF3vjUi3wOXoSBBtbq2150C1_GnOgiWcbIBP-vgv19h2wmW_fotECb6mt6bZO8W-l8Yb901ecwI4g",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "oldPassword",
+											"value": "wajihwajih",
+											"type": "text"
+										},
+										{
+											"key": "newPassword",
+											"value": "wajihwajih",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/parents/change-password",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"parents",
+										"change-password"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "all Levels",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxMSwiaWF0IjoxNjY3ODI3ODY5LCJleHAiOjE2Njc5MTQyNjksInBybSI6IjRlMjRiODJmOTlkZmQyNDQ2NjZhZGFlMzFmZjk2YWQ4ODdiZGYzYjAwYzlhMjBiZjAxYTViNzBmMWVmYjk5OGQ5OWI5YTZhNjFjNDZiMzYyNDdhZGEzNDZlMzUxYWJjNmQwMmRmNjM1MGNkYmEzOTc5MzVjZWE0MzUzMDJlZTI5Iiwicm9sZSI6InBhcmVudCJ9.O27HvF5yLLQdoNAsbolaySQWqAKBdKbh4lScvE62fgW8XjXGCh7LbryK1FwYeXfFLbrAZjSyFb8bFghT3kdYYQ",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/parents/levels",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"parents",
+										"levels"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Child",
+					"item": [
+						{
+							"name": "WorldByLoggedChild",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoyOTgsImlhdCI6MTY2ODI4NjA1MywiZXhwIjoxNjY4MzcyNDUzLCJwcm0iOiI2YjgwMjk0YWIzNjQ0M2UxYjg2NzM1ZGUxYzk3OTUwNzVmMjI5YWE4NjVlODk3OTk3ZDY1Y2Y3OWFmNzQ4N2NmMjE1Y2ExN2QzMDI4NGU0YmFhYzExMmQ1M2U2MGJmZGFjNTY2ODI4YmM0MTI0YmJhYjUwNzFkYzdmMDdjZjljOCIsInJvbGUiOiJjaGlsZCJ9.PsXFMhzgnUHmR87EVpFN0P-n3P2ju-6dENs9-2dZ75Wrm-Fkq1ZgoKPauWWOhzGzVAjQQUQ7jrt7EXjsYWLMsA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/child/world",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"child",
+										"world"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create progress",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoyOTgsImlhdCI6MTY2Nzg5NzI2OCwiZXhwIjoxNjY3OTgzNjY4LCJwcm0iOiIwODBiNzFhZDcyZWVkNDU2ZmJlYWYyZWJlMjEyOTY0NmFjNGI4MjYxZjg0MjBiNjM0Y2MzOTJmZTMxZTAzYjkxMDQ5ZDQyNWRlZmRkN2YxMjk3YTMyODA5OWUyNjk4ZmNhYjQ2MDY1YzIyZTMxNWJjZWJjYjRkM2E4MzM1NWI3MSIsInJvbGUiOiJjaGlsZCJ9.ar9Rr9kjRVqcaz6tlutT8ZVL9fOcttR_s9xQYsQyXG8nkf9BvbCmZ390654neuE9yr_LUqGxjIK9da7yHNyZeQ",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"game_id\" : 169,\n    \"user_id\" : 298,\n    \"score\" : 100,\n    \"status\" : \"Correct\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/child/progress",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"child",
+										"progress"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "question progress",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoyOTgsImlhdCI6MTY2ODI4NjYxNCwiZXhwIjoxNjY4MzczMDE0LCJwcm0iOiI2M2RmMTIwN2IyNDJkMjJmYWVkNjQ4NTg1MjQwMmEzZDQyNmVlMDI3MTkyZDNkOTNiMDI4ZGQwYTQwZDI0NjJiZjFjM2I4NGU4NzMwOTFmMWE5MDk4MGFiYzNkYzI3NzU0YjI3OTVjOWJmNmU5ZTA0ZjQxOTJiNjgzMWFjYWY4YSIsInJvbGUiOiJjaGlsZCJ9.GG4lSVpfophOnXKz535SBgd5Gjpf59N5fpU49Ar5L169_5ex-avbaRrdpvwBN723NndOasE3SOh5xljrLYkF5Q",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"game\": {\n        \"gameId\": 211,\n        \"score\": 222,\n        \"status\": \"PENDING\"\n    },\n    \"questions\": [\n        {\n            \"questionId\": 2071,\n            \"status\": \"PENDING\"\n        },\n        {\n            \"questionId\": 2070,\n            \"status\": \"PENDING\"\n        }\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/child/question/progress",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"child",
+										"question",
+										"progress"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Question by GameID & WorldID",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoyOTgsImlhdCI6MTY2Nzg5NzI2OCwiZXhwIjoxNjY3OTgzNjY4LCJwcm0iOiIwODBiNzFhZDcyZWVkNDU2ZmJlYWYyZWJlMjEyOTY0NmFjNGI4MjYxZjg0MjBiNjM0Y2MzOTJmZTMxZTAzYjkxMDQ5ZDQyNWRlZmRkN2YxMjk3YTMyODA5OWUyNjk4ZmNhYjQ2MDY1YzIyZTMxNWJjZWJjYjRkM2E4MzM1NWI3MSIsInJvbGUiOiJjaGlsZCJ9.ar9Rr9kjRVqcaz6tlutT8ZVL9fOcttR_s9xQYsQyXG8nkf9BvbCmZ390654neuE9yr_LUqGxjIK9da7yHNyZeQ",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/child/question/game/169/world/59",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"child",
+										"question",
+										"game",
+										"169",
+										"world",
+										"59"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Game By WorldID",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoyOTgsImlhdCI6MTY2Nzg5NzI2OCwiZXhwIjoxNjY3OTgzNjY4LCJwcm0iOiIwODBiNzFhZDcyZWVkNDU2ZmJlYWYyZWJlMjEyOTY0NmFjNGI4MjYxZjg0MjBiNjM0Y2MzOTJmZTMxZTAzYjkxMDQ5ZDQyNWRlZmRkN2YxMjk3YTMyODA5OWUyNjk4ZmNhYjQ2MDY1YzIyZTMxNWJjZWJjYjRkM2E4MzM1NWI3MSIsInJvbGUiOiJjaGlsZCJ9.ar9Rr9kjRVqcaz6tlutT8ZVL9fOcttR_s9xQYsQyXG8nkf9BvbCmZ390654neuE9yr_LUqGxjIK9da7yHNyZeQ",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/child/games/59",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"child",
+										"games",
+										"59"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Dashboard",
+					"item": [
+						{
+							"name": "AttributeSet",
+							"item": [
+								{
+									"name": "get attributeSet by ID",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2Njc0NzAzNDEsImV4cCI6MTY2NzU1Njc0MSwicHJtIjoiM2NhMjQyMDk5YWZmNTExMGU4ZDU3MGQ0OWY0NmQ3MTg5NTRhMGFmZDQyN2JjYjA2ZDBhYzNkM2MxMDMxOThjZWUyYWEzNDEwMGNmMzZiMDkzZjgyNDMyYWI0NzhiODVmZGFjOWEzODkzNzg4NmFhYTAzYzUyNGIxZjgwNmRlNGMiLCJyb2xlIjoiYWRtaW4ifQ.d78k3sz0ssLFQ7TTMPT1lvmNOi2gRSIzFzJpbJuqiwFVpuLeS0Ha2bqCry_D5wouAYQHQguL-KjXorG4Aalmhg",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "http://localhost:5000/api/dashboard/attribute/74",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "5000",
+											"path": [
+												"api",
+												"dashboard",
+												"attribute",
+												"74"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "attributeSet by question_style ID",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2Njc0NzAzNDEsImV4cCI6MTY2NzU1Njc0MSwicHJtIjoiM2NhMjQyMDk5YWZmNTExMGU4ZDU3MGQ0OWY0NmQ3MTg5NTRhMGFmZDQyN2JjYjA2ZDBhYzNkM2MxMDMxOThjZWUyYWEzNDEwMGNmMzZiMDkzZjgyNDMyYWI0NzhiODVmZGFjOWEzODkzNzg4NmFhYTAzYzUyNGIxZjgwNmRlNGMiLCJyb2xlIjoiYWRtaW4ifQ.d78k3sz0ssLFQ7TTMPT1lvmNOi2gRSIzFzJpbJuqiwFVpuLeS0Ha2bqCry_D5wouAYQHQguL-KjXorG4Aalmhg",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "http://localhost:5000/api/dashboard/attribute/question/style/113",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "5000",
+											"path": [
+												"api",
+												"dashboard",
+												"attribute",
+												"question",
+												"style",
+												"113"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "create attribute Set",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2Njc0NzAzNDEsImV4cCI6MTY2NzU1Njc0MSwicHJtIjoiM2NhMjQyMDk5YWZmNTExMGU4ZDU3MGQ0OWY0NmQ3MTg5NTRhMGFmZDQyN2JjYjA2ZDBhYzNkM2MxMDMxOThjZWUyYWEzNDEwMGNmMzZiMDkzZjgyNDMyYWI0NzhiODVmZGFjOWEzODkzNzg4NmFhYTAzYzUyNGIxZjgwNmRlNGMiLCJyb2xlIjoiYWRtaW4ifQ.d78k3sz0ssLFQ7TTMPT1lvmNOi2gRSIzFzJpbJuqiwFVpuLeS0Ha2bqCry_D5wouAYQHQguL-KjXorG4Aalmhg",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"code\": \"attribute code\",\n  \"label\": \"attribute labe\",\n  \"description\": \"attribute description\",\n  \"data\": \"attribute data\",\n  \"question_style\": 113\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:5000/api/dashboard/attribute",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "5000",
+											"path": [
+												"api",
+												"dashboard",
+												"attribute"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "update attribute Set",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2Njc0NzAzNDEsImV4cCI6MTY2NzU1Njc0MSwicHJtIjoiM2NhMjQyMDk5YWZmNTExMGU4ZDU3MGQ0OWY0NmQ3MTg5NTRhMGFmZDQyN2JjYjA2ZDBhYzNkM2MxMDMxOThjZWUyYWEzNDEwMGNmMzZiMDkzZjgyNDMyYWI0NzhiODVmZGFjOWEzODkzNzg4NmFhYTAzYzUyNGIxZjgwNmRlNGMiLCJyb2xlIjoiYWRtaW4ifQ.d78k3sz0ssLFQ7TTMPT1lvmNOi2gRSIzFzJpbJuqiwFVpuLeS0Ha2bqCry_D5wouAYQHQguL-KjXorG4Aalmhg",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"code\": \"attribute code\",\n  \"label\": \"attribute labe\",\n  \"description\": \"attribute description\",\n  \"data\": \"attribute data\",\n  \"question_style\": 113\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:5000/api/dashboard/attribute/20",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "5000",
+											"path": [
+												"api",
+												"dashboard",
+												"attribute",
+												"20"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "delete attribute Set",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2Njc0NzAzNDEsImV4cCI6MTY2NzU1Njc0MSwicHJtIjoiM2NhMjQyMDk5YWZmNTExMGU4ZDU3MGQ0OWY0NmQ3MTg5NTRhMGFmZDQyN2JjYjA2ZDBhYzNkM2MxMDMxOThjZWUyYWEzNDEwMGNmMzZiMDkzZjgyNDMyYWI0NzhiODVmZGFjOWEzODkzNzg4NmFhYTAzYzUyNGIxZjgwNmRlNGMiLCJyb2xlIjoiYWRtaW4ifQ.d78k3sz0ssLFQ7TTMPT1lvmNOi2gRSIzFzJpbJuqiwFVpuLeS0Ha2bqCry_D5wouAYQHQguL-KjXorG4Aalmhg",
+													"type": "string"
+												}
+											]
+										},
+										"method": "DELETE",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "http://localhost:5000/api/dashboard/attribute/13",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "5000",
+											"path": [
+												"api",
+												"dashboard",
+												"attribute",
+												"13"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Images",
+							"item": [
+								{
+									"name": "get image Keys",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2Njc0NzAzNDEsImV4cCI6MTY2NzU1Njc0MSwicHJtIjoiM2NhMjQyMDk5YWZmNTExMGU4ZDU3MGQ0OWY0NmQ3MTg5NTRhMGFmZDQyN2JjYjA2ZDBhYzNkM2MxMDMxOThjZWUyYWEzNDEwMGNmMzZiMDkzZjgyNDMyYWI0NzhiODVmZGFjOWEzODkzNzg4NmFhYTAzYzUyNGIxZjgwNmRlNGMiLCJyb2xlIjoiYWRtaW4ifQ.d78k3sz0ssLFQ7TTMPT1lvmNOi2gRSIzFzJpbJuqiwFVpuLeS0Ha2bqCry_D5wouAYQHQguL-KjXorG4Aalmhg",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "http://localhost:5000/api/dashboard/images",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "5000",
+											"path": [
+												"api",
+												"dashboard",
+												"images"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "create images",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxMSwiaWF0IjoxNjY3OTE2ODYwLCJleHAiOjE2NjgwMDMyNjAsInBybSI6IjU0NGM0ZmFkMWU3M2M3ZDcwMDBkN2VmYWQwZTMzNzZmMGRjMDdkNTVjNTc2ZTVhNjI4ZGQ0Yzc1YzhlMmRhODc5MmJlYWUyYTBhMjQxM2UzNjg2ZmQxNWYyNDJlYTMwYzAyN2Q2YTBkMzZmYTJiMjJiNDFiMTllMmI4Y2E1YzRkIiwicm9sZSI6InBhcmVudCJ9.IlSHE0iMh7BdEZV_Qw26x9DrZOuIRDCnUjtD4g-uZ94LYnI7xWKe5r-7hM2j8TbTf-H06I01dpHG9WxyL-snMQ",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "code",
+													"value": "\"image\"",
+													"type": "text"
+												},
+												{
+													"key": "imageFile",
+													"type": "file",
+													"src": "/C:/Users/Administrator/Pictures/CRUD.jpeg"
+												},
+												{
+													"key": "is_image_key",
+													"value": "1",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "http://localhost:5000/api/dashboard/images",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "5000",
+											"path": [
+												"api",
+												"dashboard",
+												"images"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "update images",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2Njc0NzAzNDEsImV4cCI6MTY2NzU1Njc0MSwicHJtIjoiM2NhMjQyMDk5YWZmNTExMGU4ZDU3MGQ0OWY0NmQ3MTg5NTRhMGFmZDQyN2JjYjA2ZDBhYzNkM2MxMDMxOThjZWUyYWEzNDEwMGNmMzZiMDkzZjgyNDMyYWI0NzhiODVmZGFjOWEzODkzNzg4NmFhYTAzYzUyNGIxZjgwNmRlNGMiLCJyb2xlIjoiYWRtaW4ifQ.d78k3sz0ssLFQ7TTMPT1lvmNOi2gRSIzFzJpbJuqiwFVpuLeS0Ha2bqCry_D5wouAYQHQguL-KjXorG4Aalmhg",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "code",
+													"value": "portrait",
+													"type": "text"
+												},
+												{
+													"key": "imageFile",
+													"type": "file",
+													"src": "/Users/takiacademy/Desktop/Screen Shot 2022-10-25 at 2.54.43 PM.png"
+												},
+												{
+													"key": "is_image_key",
+													"value": "true",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "http://localhost:5000/api/dashboard/images/26014",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "5000",
+											"path": [
+												"api",
+												"dashboard",
+												"images",
+												"26014"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Questions",
+							"item": [
+								{
+									"name": "question styles by question types",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2Njc0NzAzNDEsImV4cCI6MTY2NzU1Njc0MSwicHJtIjoiM2NhMjQyMDk5YWZmNTExMGU4ZDU3MGQ0OWY0NmQ3MTg5NTRhMGFmZDQyN2JjYjA2ZDBhYzNkM2MxMDMxOThjZWUyYWEzNDEwMGNmMzZiMDkzZjgyNDMyYWI0NzhiODVmZGFjOWEzODkzNzg4NmFhYTAzYzUyNGIxZjgwNmRlNGMiLCJyb2xlIjoiYWRtaW4ifQ.d78k3sz0ssLFQ7TTMPT1lvmNOi2gRSIzFzJpbJuqiwFVpuLeS0Ha2bqCry_D5wouAYQHQguL-KjXorG4Aalmhg",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "http://localhost:5000/api/dashboard/question/style/46",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "5000",
+											"path": [
+												"api",
+												"dashboard",
+												"question",
+												"style",
+												"46"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "all question types",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2Njc0NzAzNDEsImV4cCI6MTY2NzU1Njc0MSwicHJtIjoiM2NhMjQyMDk5YWZmNTExMGU4ZDU3MGQ0OWY0NmQ3MTg5NTRhMGFmZDQyN2JjYjA2ZDBhYzNkM2MxMDMxOThjZWUyYWEzNDEwMGNmMzZiMDkzZjgyNDMyYWI0NzhiODVmZGFjOWEzODkzNzg4NmFhYTAzYzUyNGIxZjgwNmRlNGMiLCJyb2xlIjoiYWRtaW4ifQ.d78k3sz0ssLFQ7TTMPT1lvmNOi2gRSIzFzJpbJuqiwFVpuLeS0Ha2bqCry_D5wouAYQHQguL-KjXorG4Aalmhg",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:5000/api/dashboard/question/types",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "5000",
+											"path": [
+												"api",
+												"dashboard",
+												"question",
+												"types"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "update question",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"question_style\": 89,\n    \"game\": \"game01\",\n    \"text\": \"string\",\n    \"enabled_question\": true,\n    \"order_question\": 1\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:5000/api/dashboard/question/562",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "5000",
+											"path": [
+												"api",
+												"dashboard",
+												"question",
+												"562"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "get question by id",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2Njc0NzAzNDEsImV4cCI6MTY2NzU1Njc0MSwicHJtIjoiM2NhMjQyMDk5YWZmNTExMGU4ZDU3MGQ0OWY0NmQ3MTg5NTRhMGFmZDQyN2JjYjA2ZDBhYzNkM2MxMDMxOThjZWUyYWEzNDEwMGNmMzZiMDkzZjgyNDMyYWI0NzhiODVmZGFjOWEzODkzNzg4NmFhYTAzYzUyNGIxZjgwNmRlNGMiLCJyb2xlIjoiYWRtaW4ifQ.d78k3sz0ssLFQ7TTMPT1lvmNOi2gRSIzFzJpbJuqiwFVpuLeS0Ha2bqCry_D5wouAYQHQguL-KjXorG4Aalmhg",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:5000/api/dashboard/question/562",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "5000",
+											"path": [
+												"api",
+												"dashboard",
+												"question",
+												"562"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "get question by game id",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2Njc0NzAzNDEsImV4cCI6MTY2NzU1Njc0MSwicHJtIjoiM2NhMjQyMDk5YWZmNTExMGU4ZDU3MGQ0OWY0NmQ3MTg5NTRhMGFmZDQyN2JjYjA2ZDBhYzNkM2MxMDMxOThjZWUyYWEzNDEwMGNmMzZiMDkzZjgyNDMyYWI0NzhiODVmZGFjOWEzODkzNzg4NmFhYTAzYzUyNGIxZjgwNmRlNGMiLCJyb2xlIjoiYWRtaW4ifQ.d78k3sz0ssLFQ7TTMPT1lvmNOi2gRSIzFzJpbJuqiwFVpuLeS0Ha2bqCry_D5wouAYQHQguL-KjXorG4Aalmhg",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:5000/api/dashboard/questions/104",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "5000",
+											"path": [
+												"api",
+												"dashboard",
+												"questions",
+												"104"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "create a question",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxMSwiaWF0IjoxNjY3OTAzOTAyLCJleHAiOjE2Njc5OTAzMDIsInBybSI6ImQwOWIyY2M1M2Q2ODhjMGZkMTA4MDBlNDJjNTgzNzZmMTAwYWVmOWFkZTQ3MmJhMDlkZTkyNmZhNDU0NDgwZDI3ZWRlNzczYTVhNGJlMDU3NDQ1Mzk3MWIxM2FiNDdkNTE1ZGFhZDJkYTg0MTllMzhjNTIzYTk1ZWY3ZjIyMDliIiwicm9sZSI6InBhcmVudCJ9.brvl8FXBSoC7AymUsFjO1Bt4YYBJgGCIVbQ3v7v9RQLCK0UUwmu6qOkPKudGgn8bHi4O_ZqXv9PLBpMO_5ggng",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"question_style\": 89,\n    \"game\": 109,\n    \"text\": \"string\",\n    \"enabled_question\": true,\n    \"order_question\": 1\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:5000/api/dashboard/question",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "5000",
+											"path": [
+												"api",
+												"dashboard",
+												"question"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "delete a question",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2Njc0NzAzNDEsImV4cCI6MTY2NzU1Njc0MSwicHJtIjoiM2NhMjQyMDk5YWZmNTExMGU4ZDU3MGQ0OWY0NmQ3MTg5NTRhMGFmZDQyN2JjYjA2ZDBhYzNkM2MxMDMxOThjZWUyYWEzNDEwMGNmMzZiMDkzZjgyNDMyYWI0NzhiODVmZGFjOWEzODkzNzg4NmFhYTAzYzUyNGIxZjgwNmRlNGMiLCJyb2xlIjoiYWRtaW4ifQ.d78k3sz0ssLFQ7TTMPT1lvmNOi2gRSIzFzJpbJuqiwFVpuLeS0Ha2bqCry_D5wouAYQHQguL-KjXorG4Aalmhg",
+													"type": "string"
+												}
+											]
+										},
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:5000/api/dashboard/question/561",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "5000",
+											"path": [
+												"api",
+												"dashboard",
+												"question",
+												"561"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "hard delete all questions",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:5000/api/dashboard/questions",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "5000",
+											"path": [
+												"api",
+												"dashboard",
+												"questions"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "All Levels",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2Njc0NzAzNDEsImV4cCI6MTY2NzU1Njc0MSwicHJtIjoiM2NhMjQyMDk5YWZmNTExMGU4ZDU3MGQ0OWY0NmQ3MTg5NTRhMGFmZDQyN2JjYjA2ZDBhYzNkM2MxMDMxOThjZWUyYWEzNDEwMGNmMzZiMDkzZjgyNDMyYWI0NzhiODVmZGFjOWEzODkzNzg4NmFhYTAzYzUyNGIxZjgwNmRlNGMiLCJyb2xlIjoiYWRtaW4ifQ.d78k3sz0ssLFQ7TTMPT1lvmNOi2gRSIzFzJpbJuqiwFVpuLeS0Ha2bqCry_D5wouAYQHQguL-KjXorG4Aalmhg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/dashboard/levels",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"dashboard",
+										"levels"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Login_check",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2NjU5OTk4MjAsImV4cCI6MTY2NjA4NjIyMCwicHJtIjoiNjA1OTU0NzRkMWI1ZTUxZWJjOGI0Y2ZjYmFlMzFjZTA4N2IxZTM3YmQyNmI5MjY1ZjRhYjkxODc1NTVjYzIwM2IzYWU1MGI2YTNjNDg0OGNhN2FjMzFmMzQwZWExN2QyMGMwNTBiNmQwOWIwYWVmNWY4NTY3ZmEwNDkwZjYxMWEiLCJyb2xlIjoiQ2hpbGQifQ.Aoe7d4mjiZL2itUfHZ_qLYB0rSLBTJevFPISZv8MimkkNHZ-k9B5YcoxO5zkMv_CvtOnirDS-2njt3CyEgmdLw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"username\": \"hani\",\n  \"password\": \"123456789\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/dashboard/auth/login_check",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"dashboard",
+										"auth",
+										"login_check"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Worlds by Level ID",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxMSwiaWF0IjoxNjY3OTA1OTU5LCJleHAiOjE2Njc5OTIzNTksInBybSI6IjVmZmI3ZDhmODI0OWJjNDY3OWI2ZDUwNWE2ZTYzMmFhNDM3N2E3ZjAzMTdhZmI4YjU2NzgzNDdhZDU5ZmU4NGQ0ODY3YzBmZDM2OWMwMTYyNWNkMDEwMmViNmY5OTkzNThkMWVhNTFkYjNlOWQ2ZWU2NmUwNjI1Y2RlMjUxMTZiIiwicm9sZSI6InBhcmVudCJ9.ZaKNqK4Ic8h7Trff9V0USccgqAtPdSYbHTCmu2ROjEeS4ZFxF3Pq1BijV2NE9XxYamP6G4FwqTebW73yU3GEoA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"game_id\": 1,\n    \"score\": 95,\n    \"status\": \"locked\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/dashboard/worlds/13000",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"dashboard",
+										"worlds",
+										"13000"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Game By WorldID",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxMSwiaWF0IjoxNjY3OTA1OTU5LCJleHAiOjE2Njc5OTIzNTksInBybSI6IjVmZmI3ZDhmODI0OWJjNDY3OWI2ZDUwNWE2ZTYzMmFhNDM3N2E3ZjAzMTdhZmI4YjU2NzgzNDdhZDU5ZmU4NGQ0ODY3YzBmZDM2OWMwMTYyNWNkMDEwMmViNmY5OTkzNThkMWVhNTFkYjNlOWQ2ZWU2NmUwNjI1Y2RlMjUxMTZiIiwicm9sZSI6InBhcmVudCJ9.ZaKNqK4Ic8h7Trff9V0USccgqAtPdSYbHTCmu2ROjEeS4ZFxF3Pq1BijV2NE9XxYamP6G4FwqTebW73yU3GEoA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/dashboard/games/62",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"dashboard",
+										"games",
+										"62"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "remove all games",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJUYWtpQWNhZGVteSBUZWFtIiwiYXVkIjoiVGFraUtpZHMgQWRtaW4gIiwic3ViIjoxLCJpYXQiOjE2NjczODE0MTQsImV4cCI6MTY2NzQ2NzgxNCwicHJtIjoiODBiMjczNzgzMjgzOGNmYTgyZWM5ODE4MmNlYjVmNTRhNjYwZjE0NzdkYzI5NWU2NGY5OWJjY2YzNDBjZmY1MTdlNzg3ODAyMGUxMzFmNjM3ZmUwZDE4MDVjNDlkZWM5ZWE2ODI0NGRkNmFiZTY0MWZlMTk1NDFmYjkxZmZjNjEiLCJyb2xlIjoiYWRtaW4ifQ.K9k6e7XU8E2IgdIDbxTC0MwxU0wgGMJMZqfQMdGrY0S99ymu3liKes3kurdC_pLuBVz3dwMOOQDSF5DTRbwSnQ",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/dashboard/games",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"dashboard",
+										"games"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}

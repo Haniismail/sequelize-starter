@@ -1,0 +1,55 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/Users/takiacademy/Desktop/Back-end/apitakikids/logs/.6036dbc78387b7df85dcccaa85c018472c9062e3-audit.json",
+    "files": [
+        {
+            "date": 1675933860909,
+            "name": "/Users/takiacademy/Desktop/Back-end/apitakikids/logs/2023-02-09.log",
+            "hash": "3c341cb9c3203055f6de7129655f13d7"
+        },
+        {
+            "date": 1676286827254,
+            "name": "/Users/takiacademy/Desktop/Back-end/apitakikids/logs/2023-02-13.log",
+            "hash": "54e0f155561557161b49b7adcefa13d0"
+        },
+        {
+            "date": 1676373100913,
+            "name": "/Users/takiacademy/Desktop/Back-end/apitakikids/logs/2023-02-14.log",
+            "hash": "5a90f60df0113d2f89de276c49e0f1f1"
+        },
+        {
+            "date": 1676458405160,
+            "name": "/Users/takiacademy/Desktop/Back-end/apitakikids/logs/2023-02-15.log",
+            "hash": "47a22b5b2b09ab6b5fcd5af23e54369b"
+        },
+        {
+            "date": 1676535895012,
+            "name": "/Users/takiacademy/Desktop/Back-end/apitakikids/logs/2023-02-16.log",
+            "hash": "45598319f07946ae88d0e2f3222ab6a0"
+        },
+        {
+            "date": 1676881322564,
+            "name": "/Users/takiacademy/Desktop/Back-end/apitakikids/logs/2023-02-20.log",
+            "hash": "f7e724d54caccb1cf9a5ab28c098bf1d"
+        },
+        {
+            "date": 1676967483445,
+            "name": "/Users/takiacademy/Desktop/Back-end/apitakikids/logs/2023-02-21.log",
+            "hash": "3b6493090ac3ea76799c64aae2463b8f"
+        },
+        {
+            "date": 1677056422197,
+            "name": "/Users/takiacademy/Desktop/Back-end/apitakikids/logs/2023-02-22.log",
+            "hash": "95e2bf91e30b17942f25f42b98c7d014"
+        },
+        {
+            "date": 1677141928199,
+            "name": "/Users/takiacademy/Desktop/Back-end/apitakikids/logs/2023-02-23.log",
+            "hash": "1d637d025094cad853bd07c0c6694b43"
+        }
+    ],
+    "hashType": "md5"
+}

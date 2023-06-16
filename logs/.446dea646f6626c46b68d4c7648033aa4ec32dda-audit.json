@@ -1,0 +1,30 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/Users/takiacademy/Desktop/Back-end/apitakikids/logs/.446dea646f6626c46b68d4c7648033aa4ec32dda-audit.json",
+    "files": [
+        {
+            "date": 1675681083563,
+            "name": "/Users/takiacademy/Desktop/Back-end/apitakikids/logs/2023-02-06.log",
+            "hash": "fa0468242045fc068c9c0fc3f671e862"
+        },
+        {
+            "date": 1675862265881,
+            "name": "/Users/takiacademy/Desktop/Back-end/apitakikids/logs/2023-02-08.log",
+            "hash": "03aeaee77cc5fe80588fcbee5d376839"
+        },
+        {
+            "date": 1675934065508,
+            "name": "/Users/takiacademy/Desktop/Back-end/apitakikids/logs/2023-02-09.log",
+            "hash": "c14d7abad607b887eba83b10722dac9b"
+        },
+        {
+            "date": 1676286816422,
+            "name": "/Users/takiacademy/Desktop/Back-end/apitakikids/logs/2023-02-13.log",
+            "hash": "0644b222a03db7207fbf59175d075691"
+        }
+    ],
+    "hashType": "md5"
+}

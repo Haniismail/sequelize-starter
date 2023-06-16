@@ -1,0 +1,35 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "C:\\Users\\Administrator\\Desktop\\TakiKids Api\\apitakikids\\logs\\.417800f11c888f0156c00c1cff89511950fc479c-audit.json",
+    "files": [
+        {
+            "date": 1666458715632,
+            "name": "C:\\Users\\Administrator\\Desktop\\TakiKids Api\\apitakikids\\logs\\2022-10-22.log",
+            "hash": "0cfeb21aafa7c9186798e9617ee15b12"
+        },
+        {
+            "date": 1666542433858,
+            "name": "C:\\Users\\Administrator\\Desktop\\TakiKids Api\\apitakikids\\logs\\2022-10-23.log",
+            "hash": "9e013a9c93306366ebcdae043ade4dcb"
+        },
+        {
+            "date": 1666987175806,
+            "name": "C:\\Users\\Administrator\\Desktop\\TakiKids Api\\apitakikids\\logs\\2022-10-28.log",
+            "hash": "25e4c53639d3cff02f2a1d9b1eb7acfc"
+        },
+        {
+            "date": 1667139308987,
+            "name": "C:\\Users\\Administrator\\Desktop\\TakiKids Api\\apitakikids\\logs\\2022-10-30.log",
+            "hash": "b2589299f924c3577070083424476e0b"
+        },
+        {
+            "date": 1667172830362,
+            "name": "C:\\Users\\Administrator\\Desktop\\TakiKids Api\\apitakikids\\logs\\2022-10-31.log",
+            "hash": "75a052ca66ee7c14bbbb1b5af4f7a6c0"
+        }
+    ],
+    "hashType": "md5"
+}

@@ -1,0 +1,104 @@
+
+[
+  Games {
+    dataValues: {
+      id: 1,
+      name: ' "Tic Tac Toe for Kids"',
+      stageId: 1,
+      photo: null,
+      animation: '69',
+      deletedAt: null,
+      createdAt: 2022-05-25T10:51:34.000Z,
+      updatedAt: 2022-05-25T10:51:34.000Z
+    },
+    _previousDataValues: {
+      id: 1,
+      name: ' "Tic Tac Toe for Kids"',
+      stageId: 1,
+      photo: null,
+      animation: '69',
+      deletedAt: null,
+      createdAt: 2022-05-25T10:51:34.000Z,
+      updatedAt: 2022-05-25T10:51:34.000Z
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  Games {
+    dataValues: {
+      id: 2,
+      name: ' "Tic Tac Toe for Kids"',
+      stageId: 1,
+      photo: 'photo-1653477100433-406776503.png',
+      animation: '69',
+      deletedAt: null,
+      createdAt: 2022-05-25T11:11:40.000Z,
+      updatedAt: 2022-05-25T11:11:40.000Z
+    },
+    _previousDataValues: {
+      id: 2,
+      name: ' "Tic Tac Toe for Kids"',
+      stageId: 1,
+      photo: 'photo-1653477100433-406776503.png',
+      animation: '69',
+      deletedAt: null,
+      createdAt: 2022-05-25T11:11:40.000Z,
+      updatedAt: 2022-05-25T11:11:40.000Z
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  []
+]
+
+[
+  Stage {
+    dataValues: {
+      id: 1,
+      name: 'Beginner',
+      order_level: 99,
+       world_id: 1,
+      subjectsId: 1,
+      deletedAt: null,
+      createdAt: 2022-05-25T10:51:30.000Z,
+      updatedAt: 2022-05-25T10:51:30.000Z
+    },
+    _previousDataValues: {
+      id: 1,
+      name: 'Beginner',
+      order_level: 99,
+       world_id: 1,
+      subjectsId: 1,
+      deletedAt: null,
+      createdAt: 2022-05-25T10:51:30.000Z,
+      updatedAt: 2022-05-25T10:51:30.000Z
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [Array]
+    },
+    isNewRecord: false
+  },
+  []
+]

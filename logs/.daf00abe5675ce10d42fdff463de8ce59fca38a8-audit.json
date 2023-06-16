@@ -1,0 +1,25 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "C:\\Users\\Administrator\\Desktop\\provisional\\apitakikids\\logs\\.daf00abe5675ce10d42fdff463de8ce59fca38a8-audit.json",
+    "files": [
+        {
+            "date": 1650541201415,
+            "name": "C:\\Users\\Administrator\\Desktop\\provisional\\apitakikids\\logs\\2022-04-21.log",
+            "hash": "5d053a627ede7febb18a08458560a8fb"
+        },
+        {
+            "date": 1651653311403,
+            "name": "C:\\Users\\Administrator\\Desktop\\provisional\\apitakikids\\logs\\2022-05-04.log",
+            "hash": "ba271cd4848f3d7bc406ee57117236e1"
+        },
+        {
+            "date": 1651740194646,
+            "name": "C:\\Users\\Administrator\\Desktop\\provisional\\apitakikids\\logs\\2022-05-05.log",
+            "hash": "32fa6284e890ad1387dbdf96d307194b"
+        }
+    ],
+    "hashType": "md5"
+}
